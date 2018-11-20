@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gray_f2"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bin_331_dip"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/k_song_cover"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@mipmap/bg"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.huanglong.v3.view.LrcView
+                android:id="@+id/k_song_lrc_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/bin_11_dip"
+                android:layout_marginTop="@dimen/bin_60_dip"
+                android:layout_weight="1"
+                app:lrcAnimationDuration="1000"
+                app:lrcCurrentTextColor="@color/colorAccent"
+                app:lrcDividerHeight="@dimen/bin_12_dip"
+                app:lrcLabel="找不到歌词(@_@)"
+                app:lrcNormalTextColor="#BDBDBD"
+                app:lrcPadding="@dimen/bin_20_dip"
+                app:lrcTextSize="@dimen/bin_16_dip"
+                app:lrcTimeTextColor="#BDBDBD"
+                app:lrcTimelineColor="#80BDBDBD"
+                app:lrcTimelineTextColor="#9FA8DA" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/bin_11_dip"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/bin_11_dip"
+                android:paddingRight="@dimen/bin_11_dip">
+
+
+                <ImageView
+                    android:id="@+id/k_song_desk_pause"
+                    android:layout_width="@dimen/bin_40_dip"
+                    android:layout_height="@dimen/bin_40_dip"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/bin_11_dip"
+                    android:src="@mipmap/desk_pause_prs" />
+
+
+                <TextView
+                    android:id="@+id/k_song_current_duration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="00:00"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/bin_11_dip" />
+
+                <SeekBar
+                    android:id="@+id/k_song_seek_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/k_song_total_duration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="00:00"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/bin_11_dip" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/bin_9_dip"
+        android:paddingRight="@dimen/bin_9_dip"
+        android:paddingTop="@dimen/bin_13_dip">
+
+        <ImageView
+            android:id="@+id/k_song_user_avatar"
+            android:layout_width="@dimen/bin_44_dip"
+            android:layout_height="@dimen/bin_44_dip"
+            android:src="@drawable/head_me" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/bin_9_dip"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/k_song_user_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray_33"
+                android:textSize="@dimen/bin_13_dip" />
+
+            <TextView
+                android:id="@+id/k_song_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/bin_5_dip"
+                android:drawableLeft="@mipmap/icon_small_gray_headset"
+                android:drawablePadding="@dimen/bin_5_dip"
+                android:textColor="@color/gray_888888"
+                android:textSize="@dimen/bin_9_dip" />
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/k_song_details_zan_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/icon_zan" />
+
+        <TextView
+            android:id="@+id/k_song_details_zan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="@dimen/bin_9_dip"
+            android:paddingRight="@dimen/bin_9_dip"
+            android:text="0"
+            android:textColor="@color/gray_33"
+            android:textSize="@dimen/bin_14_dip" />
+
+        <TextView
+            android:id="@+id/k_song_details_follow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:drawableLeft="@mipmap/icon_follow_normal"
+            android:drawablePadding="@dimen/bin_5_dip"
+            android:paddingLeft="@dimen/bin_9_dip"
+            android:paddingRight="@dimen/bin_9_dip"
+            android:text="0"
+            android:textColor="@color/gray_33"
+            android:textSize="@dimen/bin_14_dip" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/bin_11_dip"
+        android:paddingLeft="@dimen/bin_9_dip"
+        android:paddingRight="@dimen/bin_9_dip"
+        android:paddingTop="@dimen/bin_11_dip">
+
+        <TextView
+            android:id="@+id/k_song_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray_33"
+            android:textSize="@dimen/bin_12_dip" />
+
+        <TextView
+            android:id="@+id/k_song_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:textColor="@color/gray_888888"
+            android:textSize="@dimen/bin_10_dip" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/bin_6_dip"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/bin_9_dip"
+            android:layout_marginTop="@dimen/bin_9_dip"
+            android:paddingLeft="@dimen/bin_9_dip"
+            android:paddingRight="@dimen/bin_9_dip">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="礼物榜"
+                android:textColor="@color/gray_33"
+                android:textSize="@dimen/bin_14_dip" />
+
+            <TextView
+                android:id="@+id/k_song_gift_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:drawablePadding="@dimen/bin_5_dip"
+                android:drawableRight="@mipmap/icon_flower"
+                android:text="累计：66"
+                android:textColor="@color/gray_66"
+                android:textSize="@dimen/bin_12_dip" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/bin_9_dip"
+            android:paddingLeft="@dimen/bin_9_dip"
+            android:paddingRight="@dimen/bin_9_dip">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/k_song_user_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/k_song_user_list_more"
+                style="@style/right_arrow"
+                android:layout_gravity="center_vertical" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bin_30_dip"
+        android:layout_marginTop="0.5dp"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/bin_9_dip"
+        android:paddingRight="@dimen/bin_9_dip">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:drawableLeft="@mipmap/icon_more_ranking"
+            android:drawablePadding="@dimen/bin_5_dip"
+            android:text="打榜中，查看本周好友作品收礼榜"
+            android:textColor="@color/gray_99"
+            android:textSize="@dimen/bin_12_dip" />
+
+        <ImageView
+            style="@style/right_arrow"
+            android:layout_gravity="center_vertical" />
+
+    </LinearLayout>
+
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/k_song_tab"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bin_39_dip"
+        android:layout_marginBottom="0.5dp"
+        android:layout_marginTop="@dimen/bin_6_dip"
+        android:background="@color/white"
+        app:tabBackground="@color/white"
+        app:tabMaxWidth="@dimen/bin_100_dip"
+        app:tabMinWidth="@dimen/bin_100_dip"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="@color/orange_FE552E"
+        app:tabTextAppearance="@style/TabLayoutTextStyle"
+        app:tabTextColor="@color/gray_33">
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/k_song_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="评论" />
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/k_song_other"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="其他作品" />
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/k_song_praise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="赞" />
+    </android.support.design.widget.TabLayout>
+
+</LinearLayout>

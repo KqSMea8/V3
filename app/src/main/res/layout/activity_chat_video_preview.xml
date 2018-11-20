@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <SurfaceView
+        android:id="@+id/video"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true" />
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/bin_36_dip"
+        android:paddingLeft="@dimen/bin_12_dip"
+        android:src="@mipmap/umeng_back_icon" />
+
+
+    <Button
+        android:id="@+id/send"
+        android:layout_width="@dimen/bin_50_dip"
+        android:layout_height="@dimen/bin_25_dip"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/bin_12_dip"
+        android:layout_marginTop="@dimen/bin_34_dip"
+        android:background="@drawable/frame_orange"
+        android:text="发送"
+        android:textColor="@color/white"
+        android:textSize="@dimen/bin_12_dip" />
+
+</RelativeLayout>

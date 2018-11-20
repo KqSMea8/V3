@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/gray_f2"
+    android:orientation="vertical"
+    android:paddingBottom="0.5dp">
+
+    <TextView
+        android:id="@+id/item_personal_page_class"
+        android:layout_width="@dimen/bin_40_dip"
+        android:layout_height="@dimen/bin_40_dip"
+        android:background="@drawable/bg_radio_personal"
+        android:button="@null"
+        android:gravity="center"
+        android:text="玉器"
+        android:textColor="@drawable/bg_radio_personal_text"
+        android:textSize="@dimen/bin_13_dip" />
+
+
+</LinearLayout>

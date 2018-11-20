@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/yel_page_info_lin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_f2"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/orange_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:id="@+id/yel_page_info_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+
+    <RelativeLayout
+        android:id="@+id/yel_page_info_comment"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bin_44_dip"
+        android:layout_marginTop="0.5dp"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@mipmap/icon_comment"
+            android:drawablePadding="@dimen/bin_9_dip"
+            android:text="评论"
+            android:textColor="@color/gray_99"
+            android:textSize="@dimen/bin_13_dip" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

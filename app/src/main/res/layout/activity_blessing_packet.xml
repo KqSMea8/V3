@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/orange_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bin_33_dip"
+        android:layout_marginBottom="@dimen/bin_10_dip"
+        android:layout_marginLeft="@dimen/bin_11_dip"
+        android:layout_marginRight="@dimen/bin_11_dip"
+        android:layout_marginTop="@dimen/bin_10_dip"
+        android:background="@drawable/box_gray_white"
+        android:drawableLeft="@mipmap/icon_seach"
+        android:drawablePadding="@dimen/bin_10_dip"
+        android:hint="搜索"
+        android:paddingLeft="@dimen/bin_11_dip"
+        android:paddingRight="@dimen/bin_11_dip"
+        android:singleLine="true"
+        android:textSize="@dimen/bin_12_dip" />
+
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:id="@+id/bless_packet_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

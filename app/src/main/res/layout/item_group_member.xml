@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/item_group_member_avatar"
+        android:layout_width="@dimen/bin_40_dip"
+        android:layout_height="@dimen/bin_40_dip"
+        android:layout_marginTop="@dimen/bin_9_dip"
+        android:src="@drawable/head_me" />
+
+    <TextView
+        android:id="@+id/item_group_member_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/bin_9_dip"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="哈哈"
+        android:textColor="@color/gray_33"
+        android:textSize="@dimen/bin_11_dip" />
+
+
+</LinearLayout>

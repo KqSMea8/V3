@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/orange_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RadioGroup
+                android:id="@+id/withdrawals_radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/bin_33_dip"
+                android:layout_marginLeft="@dimen/bin_11_dip"
+                android:layout_marginRight="@dimen/bin_11_dip"
+                android:layout_marginTop="@dimen/bin_20_dip"
+                android:background="@drawable/box_blue_rectangle"
+                android:orientation="horizontal"
+                android:padding="@dimen/bin_1_dip">
+
+
+                <RadioButton
+                    android:id="@+id/withdrawals_radio_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/selected_money_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="200"
+                    android:textColor="@drawable/selected_money_tv"
+                    android:textSize="@dimen/bin_14_dip" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/orange_FC6C57" />
+
+                <RadioButton
+                    android:id="@+id/withdrawals_radio_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/selected_money_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="300"
+                    android:textColor="@drawable/selected_money_tv"
+                    android:textSize="@dimen/bin_14_dip" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/orange_FC6C57" />
+
+                <RadioButton
+                    android:id="@+id/withdrawals_radio_three"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/selected_money_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="500"
+                    android:textColor="@drawable/selected_money_tv"
+                    android:textSize="@dimen/bin_14_dip" />
+
+
+            </RadioGroup>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/bin_44_dip"
+                android:layout_marginTop="@dimen/bin_20_dip"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/bin_11_dip"
+                android:paddingRight="@dimen/bin_11_dip">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="密码"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/bin_16_dip" />
+
+
+                <EditText
+                    android:id="@+id/withdrawals_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bin_33_dip"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/bin_11_dip"
+                    android:background="@drawable/box_gray_white"
+                    android:hint="请输入提现密码"
+                    android:inputType="textPassword"
+                    android:paddingLeft="@dimen/bin_11_dip"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray_66"
+                    android:textSize="@dimen/bin_12_dip" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/withdrawals_submit"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/bin_33_dip"
+                android:layout_marginLeft="@dimen/bin_11_dip"
+                android:layout_marginRight="@dimen/bin_11_dip"
+                android:layout_marginTop="@dimen/bin_20_dip"
+                android:background="@drawable/frame_orange"
+                android:text="提现"
+                android:textColor="@color/white"
+                android:textSize="@dimen/bin_14_dip" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/bin_20_dip"
+                android:paddingLeft="@dimen/bin_11_dip"
+                android:paddingRight="@dimen/bin_11_dip"
+                android:text="@string/withdraw_explain"
+                />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

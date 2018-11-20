@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray1"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/orange_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorSendName5"
+        android:paddingBottom="@dimen/bin_5_dip"
+        android:paddingLeft="@dimen/bin_9_dip"
+        android:paddingTop="@dimen/bin_5_dip"
+        android:text="临时好友聊天"
+        android:textColor="@color/white"
+        android:textSize="@dimen/bin_12_dip" />
+
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:id="@+id/tem_chat_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:longClickable="true"
+        android:layout_weight="1" />
+
+    <include
+        layout="@layout/pop_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

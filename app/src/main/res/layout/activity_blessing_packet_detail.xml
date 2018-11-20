@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_f2"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/bless_packet_details_lin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bin_100_dip"
+                    android:background="@mipmap/bg_bless_packet_top" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/bin_75_dip">
+
+                    <ImageView
+                        android:id="@+id/bless_packet_details_avatar"
+                        android:layout_width="@dimen/bin_44_dip"
+                        android:layout_height="@dimen/bin_44_dip"
+                        android:src="@drawable/head_me" />
+
+                    <ImageView
+                        android:id="@+id/bless_packet_details_enterprise"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/bless_packet_details_avatar"
+                        android:layout_alignRight="@+id/bless_packet_details_avatar"
+                        android:src="@mipmap/icon_enterprise" />
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/bless_packet_details_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/bin_10_dip"
+                android:drawablePadding="@dimen/bin_4_dip"
+                android:drawableRight="@mipmap/ico_bless_fight"
+                android:text="哈哈哈"
+                android:textColor="@color/gray_33"
+                android:textSize="@dimen/bin_15_dip" />
+
+            <TextView
+                android:id="@+id/bless_packet_details_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/bin_11_dip"
+                android:layout_marginRight="@dimen/bin_11_dip"
+                android:layout_marginTop="@dimen/bin_11_dip"
+                android:gravity="center"
+                android:text="哈哈哈哈哈"
+                android:textColor="@color/gray_66"
+                android:textSize="@dimen/bin_13_dip" />
+
+            <TextView
+                android:id="@+id/bless_packet_details_pressword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/bin_11_dip"
+                android:layout_marginRight="@dimen/bin_11_dip"
+                android:layout_marginTop="@dimen/bin_9_dip"
+                android:gravity="center"
+                android:text="哈哈哈哈哈"
+                android:textColor="@color/gray_66"
+                android:textSize="@dimen/bin_13_dip" />
+
+            <LinearLayout
+                android:id="@+id/bless_packet_details_money_lin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/bin_11_dip"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/bless_packet_details_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/bin_27_dip" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/bin_5_dip"
+                    android:text="元"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/bin_13_dip" />
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/bless_packet_details_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/bin_46_dip"
+                android:layout_marginRight="@dimen/bin_46_dip"
+                android:layout_marginTop="@dimen/bin_22_dip"
+                android:background="@drawable/box_green"
+                android:text="点击输入口令领取赏金"
+                android:textColor="@color/white"
+                android:textSize="@dimen/bin_13_dip" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/bin_22_dip"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/bless_packet_put_forward"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/icon_bless_withdrawals"
+                    android:drawablePadding="@dimen/bin_5_dip"
+                    android:text="去提现"
+                    android:textColor="@color/orange_FE552E"
+                    android:textSize="@dimen/bin_12_dip" />
+
+                <TextView
+                    android:id="@+id/bless_packet_i_sender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/bin_22_dip"
+                    android:drawableLeft="@mipmap/icon_send_bless_packet"
+                    android:drawablePadding="@dimen/bin_5_dip"
+                    android:text="我也发一个"
+                    android:textColor="@color/orange_FE552E"
+                    android:textSize="@dimen/bin_12_dip" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/bin_22_dip"
+                    android:drawableLeft="@mipmap/icon_bless_share"
+                    android:drawablePadding="@dimen/bin_5_dip"
+                    android:text="去转发"
+                    android:visibility="gone"
+                    android:textColor="@color/orange_FE552E"
+                    android:textSize="@dimen/bin_12_dip" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/bin_11_dip"
+            android:background="@mipmap/icon_bless_packet_bg"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/bless_packet_details_receive_num"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/bin_25_dip"
+                android:layout_marginTop="@dimen/bin_11_dip"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/bin_11_dip"
+                android:text="已领取"
+                android:textColor="@color/gray_33"
+                android:textSize="@dimen/bin_11_dip" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/bless_packet_details_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <include
+        layout="@layout/orange_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>

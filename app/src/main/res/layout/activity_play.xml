@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_play_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+    tools:ignore="contentDescription">
+
+    <com.huanglong.v3.live.widget.TCVideoView
+        android:id="@+id/video_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!--连麦：播放小窗口定义 开始-->
+
+    <!--连麦：第一个播放小窗口-->
+    <FrameLayout
+        android:id="@+id/frameLayout1"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="56dp"
+        android:layout_marginRight="8dp">
+
+        <com.huanglong.v3.live.widget.TCVideoView
+            android:id="@+id/play_video_view1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:id="@+id/loading_background1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.5"
+            android:background="@color/black"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/loading_imageview1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center" />
+        </FrameLayout>
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/btn_kick_out1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone" />
+
+    <!--连麦：第二个播放小窗口-->
+    <FrameLayout
+        android:id="@+id/frameLayout2"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_above="@+id/frameLayout1"
+        android:layout_alignRight="@+id/frameLayout1">
+
+        <com.huanglong.v3.live.widget.TCVideoView
+            android:id="@+id/play_video_view2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:id="@+id/loading_background2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.5"
+            android:background="@color/black"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/loading_imageview2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center" />
+        </FrameLayout>
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/btn_kick_out2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone" />
+
+    <!--连麦：第三个播放小窗口-->
+    <FrameLayout
+        android:id="@+id/frameLayout3"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_above="@+id/frameLayout2"
+        android:layout_alignRight="@+id/frameLayout2">
+
+        <com.huanglong.v3.live.widget.TCVideoView
+            android:id="@+id/play_video_view3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:id="@+id/loading_background3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.5"
+            android:background="@color/black"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/loading_imageview3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center" />
+        </FrameLayout>
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/btn_kick_out3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone" />
+
+    <!--连麦：播放小窗口定义 结束-->
+
+    <RelativeLayout
+        android:id="@+id/rl_controllLayer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/layout_live_pusher_info"
+            layout="@layout/layout_live_pusher_info"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/bin_30_dip"
+            android:layout_marginBottom="@dimen/bin_5_dip"
+            android:layout_marginLeft="@dimen/bin_5_dip"
+            android:layout_marginRight="@dimen/bin_5_dip"
+            android:layout_marginTop="@dimen/bin_27_dip" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_user_avatar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="@dimen/bin_27_dip"
+            android:layout_toRightOf="@+id/layout_live_pusher_info"
+            android:visibility="visible" />
+
+        <RelativeLayout
+            android:id="@+id/tool_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/btn_like"
+                    android:layout_width="@dimen/bin_52_dip"
+                    android:layout_height="@dimen/bin_52_dip"
+                    android:layout_gravity="right"
+                    android:layout_marginBottom="@dimen/bin_9_dip"
+                    android:background="@mipmap/icon_live_like"
+                    android:onClick="onClick">
+
+                    <TextView
+                        android:id="@+id/live_like_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="@dimen/bin_5_dip"
+                        android:textColor="@color/white" />
+
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/btn_message_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bin_35_dip"
+                    android:layout_marginBottom="@dimen/bin_5_dip"
+                    android:background="@drawable/box_black_ban_tra"
+                    android:gravity="left|center_vertical"
+                    android:onClick="onClick"
+                    android:paddingLeft="@dimen/bin_9_dip"
+                    android:text="说点什么吧..."
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/bin_12_dip" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:visibility="gone">
+
+                        <Button
+                            android:id="@+id/btn_switch_cam"
+                            android:layout_width="@dimen/bin_32_dip"
+                            android:layout_height="@dimen/bin_32_dip"
+                            android:layout_gravity="center"
+                            android:background="@drawable/icon_switch_camera_on"
+                            android:visibility="gone" />
+                    </FrameLayout>
+
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:visibility="gone">
+
+                        <Button
+                            android:id="@+id/btn_linkmic"
+                            android:layout_width="@dimen/bin_32_dip"
+                            android:layout_height="@dimen/bin_32_dip"
+                            android:layout_gravity="center"
+                            android:background="@drawable/linkmic_on"
+                            android:visibility="invisible" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/btn_share"
+                            android:layout_width="@dimen/bin_32_dip"
+                            android:layout_height="@dimen/bin_32_dip"
+                            android:layout_gravity="left"
+                            android:background="@mipmap/icon_live_share"
+                            android:onClick="onClick" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/btn_log"
+                            android:layout_width="@dimen/bin_32_dip"
+                            android:layout_height="@dimen/bin_32_dip"
+                            android:layout_gravity="center"
+                            android:background="@drawable/icon_log_off"
+                            android:onClick="onClick"
+                            android:visibility="gone" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/btn_record"
+                            android:layout_width="@dimen/bin_32_dip"
+                            android:layout_height="@dimen/bin_32_dip"
+                            android:layout_gravity="center"
+                            android:background="@drawable/video"
+                            android:onClick="onClick" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/btn_gift"
+                            android:layout_width="@dimen/bin_32_dip"
+                            android:layout_height="@dimen/bin_32_dip"
+                            android:layout_gravity="right"
+                            android:background="@mipmap/icon_live_gift"
+                            android:onClick="onClick" />
+                    </FrameLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/im_msg_listview"
+            android:layout_width="250dp"
+            android:layout_height="10dp"
+            android:layout_above="@id/tool_bar"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:cacheColorHint="#00000000"
+            android:divider="#3c421b1b"
+            android:scrollbarStyle="outsideOverlay"
+            android:scrollbars="none"
+            android:stackFromBottom="true"
+            android:transcriptMode="normal"
+            android:visibility="gone" />
+
+        <!--录制-->
+        <RelativeLayout
+            android:id="@+id/record_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:visibility="gone">
+
+            <ProgressBar
+                android:id="@+id/record_progress"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:max="100"
+                android:progress="0"
+                android:progressDrawable="@drawable/record_progress" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_weight="11" />
+
+                <FrameLayout
+                    android:layout_width="5dp"
+                    android:layout_height="5dp"
+                    android:background="#FF0ACBAB" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/close_record"
+                android:layout_width="@dimen/bin_32_dip"
+                android:layout_height="@dimen/bin_32_dip"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="50dp"
+                android:background="@drawable/btn_close"
+                android:onClick="onClick" />
+
+            <ImageView
+                android:id="@+id/record"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/start_record"
+                android:onClick="onClick" />
+
+            <ImageView
+                android:id="@+id/retry_record"
+                android:layout_width="@dimen/bin_32_dip"
+                android:layout_height="@dimen/bin_32_dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/again"
+                android:onClick="onClick" />
+
+        </RelativeLayout>
+
+        <!--点赞动画-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="15dp">
+
+            <com.huanglong.v3.live.widget.TCHeartLayout
+                android:id="@+id/heart_layout"
+                android:layout_width="@dimen/bin_100_dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="@dimen/bin_135_dip"
+                android:focusable="true" />
+        </RelativeLayout>
+
+        <!--弹幕-->
+        <master.flame.danmaku.ui.widget.DanmakuView
+            android:id="@+id/danmakuView"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true" />
+
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="@dimen/bin_25_dip"
+            android:layout_height="@dimen/bin_25_dip"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/bin_9_dip"
+            android:layout_marginTop="@dimen/bin_27_dip"
+            android:background="@mipmap/icon_live_close"
+            android:onClick="onClick" />
+
+
+        <include
+            android:id="@+id/progressbar_container"
+            layout="@layout/layout_progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/live_gift_img"
+        android:layout_width="@dimen/bin_100_dip"
+        android:layout_height="@dimen/bin_100_dip"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

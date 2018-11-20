@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/title_rel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bin_55_dip"
+        android:background="@color/orange_FC6C57"
+        android:paddingTop="@dimen/bin_17_dip">
+
+
+        <LinearLayout
+            android:id="@+id/title_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/bin_10_dip">
+
+            <ImageView
+                android:id="@+id/title_left_img"
+                android:layout_width="@dimen/bin_15_dip"
+                android:layout_height="@dimen/bin_15_dip"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="@dimen/bin_1_dip"
+                android:src="@mipmap/icon_white_back" />
+        </LinearLayout>
+
+
+        <RadioGroup
+            android:id="@+id/video_tab"
+            android:layout_width="@dimen/bin_167_dip"
+            android:layout_height="@dimen/bin_23_dip"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/bin_8_dip"
+            android:background="@drawable/box_white"
+            android:orientation="horizontal"
+            android:padding="@dimen/bin_1_dip">
+
+            <RadioButton
+                android:id="@+id/video_tab_follow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/bg_radio_left"
+                android:button="@null"
+                android:gravity="center"
+                android:text="关注"
+                android:textColor="@drawable/bg_radio_txt"
+                android:textSize="@dimen/bin_12_dip" />
+
+            <RadioButton
+                android:id="@+id/video_tab_hot"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/bg_radio_middle"
+                android:button="@null"
+                android:gravity="center"
+                android:text="推荐"
+                android:textColor="@drawable/bg_radio_txt"
+                android:textSize="@dimen/bin_12_dip" />
+
+            <RadioButton
+                android:id="@+id/video_tab_nearby"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/bg_radio_right"
+                android:button="@null"
+                android:gravity="center"
+                android:text="附近"
+                android:textColor="@drawable/bg_radio_txt"
+                android:textSize="@dimen/bin_12_dip" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/video_tab_release"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/bin_9_dip"
+            android:gravity="center_vertical"
+            android:text="发布"
+            android:textColor="@color/white"
+            android:textSize="@dimen/bin_13_dip" />
+
+
+    </RelativeLayout>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/video_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

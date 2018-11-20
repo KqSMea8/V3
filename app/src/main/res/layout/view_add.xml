@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/panel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/gray_F5F5F5">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/plus_live"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/bin_54_dip"
+                    android:layout_height="@dimen/bin_54_dip"
+                    android:src="@mipmap/icon_live" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="直播"
+                    android:textColor="@color/orange_FA634E"
+                    android:textSize="@dimen/bin_14_dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/plus_video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/bin_54_dip"
+                    android:layout_height="@dimen/bin_54_dip"
+                    android:src="@mipmap/icon_video" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="小视频"
+                    android:textColor="@color/orange_FA634E"
+                    android:textSize="@dimen/bin_14_dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/plus_k_song"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/bin_54_dip"
+                    android:layout_height="@dimen/bin_54_dip"
+                    android:src="@mipmap/icon_lo_fi" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="K歌"
+                    android:textColor="@color/orange_FA634E"
+                    android:textSize="@dimen/bin_14_dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/plus_circle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/bin_54_dip"
+                    android:layout_height="@dimen/bin_54_dip"
+                    android:src="@mipmap/icon_bowen" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="友圈"
+                    android:textColor="@color/orange_FA634E"
+                    android:textSize="@dimen/bin_14_dip" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <View style="@style/line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bin_44_dip"
+        android:background="@color/gray_F5F5F5"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_close" />
+    </LinearLayout>
+</LinearLayout>

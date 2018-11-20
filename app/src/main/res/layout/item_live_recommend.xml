@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="@dimen/bin_151_dip"
+        android:layout_height="@dimen/bin_98_dip">
+
+        <ImageView
+            android:id="@+id/item_live_rec_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/icon_default" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/four_transparent" />
+
+        <TextView
+            android:id="@+id/item_live_rec_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/bin_4_dip"
+            android:layout_marginTop="@dimen/bin_4_dip"
+            android:background="@drawable/box_white_tra_circular"
+            android:paddingBottom="@dimen/bin_2_dip"
+            android:paddingLeft="@dimen/bin_5_dip"
+            android:paddingRight="@dimen/bin_5_dip"
+            android:paddingTop="@dimen/bin_2_dip"
+            android:text="直播"
+            android:textColor="@color/white"
+            android:textSize="@dimen/bin_9_dip" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/bin_4_dip"
+            android:layout_marginLeft="@dimen/bin_4_dip"
+            android:background="@drawable/box_white_circular"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/bin_1_dip"
+            android:paddingLeft="@dimen/bin_1_dip"
+            android:paddingRight="@dimen/bin_2_dip"
+            android:paddingTop="@dimen/bin_1_dip">
+
+            <ImageView
+                android:id="@+id/item_live_rec_avatar"
+                android:layout_width="@dimen/bin_12_dip"
+                android:layout_height="@dimen/bin_12_dip"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/head_me" />
+
+            <TextView
+                android:id="@+id/item_live_rec_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/bin_2_dip"
+                android:text="张韶涵"
+                android:textColor="@color/gray_33"
+                android:textSize="@dimen/bin_9_dip" />
+
+            <ImageView
+                android:layout_width="@dimen/bin_11_dip"
+                android:layout_height="@dimen/bin_9_dip"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/bin_2_dip"
+                android:src="@mipmap/icon_live_crown" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/item_live_rec_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/bin_9_dip"
+            android:layout_marginRight="@dimen/bin_9_dip"
+            android:text="1111"
+            android:textColor="@color/white"
+            android:textSize="@dimen/bin_10_dip" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/bin_5_dip"
+        android:orientation="horizontal"
+        android:paddingRight="@dimen/bin_5_dip">
+
+        <TextView
+            android:id="@+id/item_live_rec_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/bin_11_dip"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/gray_33"
+            android:textSize="@dimen/bin_12_dip" />
+
+
+        <ImageView
+            android:id="@+id/item_live_rec_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/bin_5_dip"
+            android:src="@mipmap/icon_circle_delete"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

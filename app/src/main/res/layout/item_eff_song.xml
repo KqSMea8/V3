@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gray_f2"
+    android:orientation="vertical"
+    android:paddingBottom="0.5dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/bin_9_dip">
+
+            <ImageView
+                android:id="@+id/item_eff_cover"
+                android:layout_width="@dimen/bin_50_dip"
+                android:layout_height="@dimen/bin_50_dip"
+                android:src="@mipmap/icon_default" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/bin_9_dip"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/item_eff_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="哈哈哈"
+                    android:textColor="@color/gray_33"
+                    android:textSize="@dimen/bin_13_dip" />
+
+                <TextView
+                    android:id="@+id/item_eff_album"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/bin_2_dip"
+                    android:text="哈哈哈"
+                    android:textColor="@color/gray_66"
+                    android:textSize="@dimen/bin_11_dip" />
+
+                <TextView
+                    android:id="@+id/item_eff_duration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/bin_2_dip"
+                    android:text="哈哈哈"
+                    android:textColor="@color/gray_99"
+                    android:textSize="@dimen/bin_9_dip" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/item_eff_k_song"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bin_33_dip"
+            android:layout_marginBottom="@dimen/bin_9_dip"
+            android:layout_marginLeft="@dimen/bin_20_dip"
+            android:layout_marginRight="@dimen/bin_20_dip"
+            android:layout_marginTop="@dimen/bin_5_dip"
+            android:background="@drawable/frame_orange"
+            android:text="我要K歌"
+            android:textColor="@color/white"
+            android:textSize="@dimen/bin_13_dip"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</LinearLayout>

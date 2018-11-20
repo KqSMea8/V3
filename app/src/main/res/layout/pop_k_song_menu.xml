@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="@dimen/bin_80_dip"
+        android:layout_height="@dimen/bin_70_dip"
+        android:background="@drawable/bg_home_pop"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/bin_10_dip">
+
+
+        <TextView
+            android:id="@+id/pop_k_song"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/bin_10_dip"
+            android:text="K       歌"
+            android:textColor="@color/white"
+            android:textSize="@dimen/bin_12_dip" />
+
+        <TextView
+            android:id="@+id/pop_k_song_file"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/bin_10_dip"
+            android:text="本地上传"
+            android:textColor="@color/white"
+            android:textSize="@dimen/bin_12_dip" />
+
+
+    </LinearLayout>
+</LinearLayout>

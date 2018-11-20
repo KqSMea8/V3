@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_F5F5F5"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/orange_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/bin_10_dip"
+        android:paddingLeft="@dimen/bin_11_dip"
+        android:paddingRight="@dimen/bin_11_dip"
+        android:paddingTop="@dimen/bin_10_dip">
+
+        <TextView
+            android:layout_width="@dimen/bin_40_dip"
+            android:layout_height="@dimen/bin_40_dip"
+            android:background="@drawable/frame_orange"
+            android:gravity="center"
+            android:text="4星"
+            android:textColor="@color/white"
+            android:textSize="@dimen/bin_15_dip" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/bin_11_dip"
+            android:layout_marginRight="@dimen/bin_11_dip"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12个月续费"
+                android:textColor="@color/black"
+                android:textSize="@dimen/bin_13_dip" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/bin_5_dip"
+                android:text="9元/月，享视频直播权限"
+                android:textColor="@color/gray_99"
+                android:textSize="@dimen/bin_11_dip" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/level_buy_four_stars"
+            android:layout_width="@dimen/bin_50_dip"
+            android:layout_height="@dimen/bin_25_dip"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/box_blue"
+            android:gravity="center"
+            android:text="￥108"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0.5dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/bin_10_dip"
+        android:paddingLeft="@dimen/bin_11_dip"
+        android:paddingRight="@dimen/bin_11_dip"
+        android:paddingTop="@dimen/bin_10_dip">
+
+        <TextView
+            android:layout_width="@dimen/bin_40_dip"
+            android:layout_height="@dimen/bin_40_dip"
+            android:background="@drawable/frame_orange"
+            android:gravity="center"
+            android:text="3星"
+            android:textColor="@color/white"
+            android:textSize="@dimen/bin_15_dip" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/bin_11_dip"
+            android:layout_marginRight="@dimen/bin_11_dip"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6个月续费"
+                android:textColor="@color/black"
+                android:textSize="@dimen/bin_13_dip" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/bin_5_dip"
+                android:text="10月/月，享拍视频60秒，K歌权限"
+                android:textColor="@color/gray_99"
+                android:textSize="@dimen/bin_11_dip" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/level_buy_three_stars"
+            android:layout_width="@dimen/bin_50_dip"
+            android:layout_height="@dimen/bin_25_dip"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/box_blue"
+            android:gravity="center"
+            android:text="￥60"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0.5dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/bin_10_dip"
+        android:paddingLeft="@dimen/bin_11_dip"
+        android:paddingRight="@dimen/bin_11_dip"
+        android:paddingTop="@dimen/bin_10_dip">
+
+        <TextView
+            android:layout_width="@dimen/bin_40_dip"
+            android:layout_height="@dimen/bin_40_dip"
+            android:background="@drawable/frame_orange"
+            android:gravity="center"
+            android:text="2星"
+            android:textColor="@color/white"
+            android:textSize="@dimen/bin_15_dip" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/bin_11_dip"
+            android:layout_marginRight="@dimen/bin_11_dip"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3个月续费"
+                android:textColor="@color/black"
+                android:textSize="@dimen/bin_13_dip" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/bin_5_dip"
+                android:text="10月/月，享拍视频15秒，K歌权限"
+                android:textColor="@color/gray_99"
+                android:textSize="@dimen/bin_11_dip" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/level_buy_two_stars"
+            android:layout_width="@dimen/bin_50_dip"
+            android:layout_height="@dimen/bin_25_dip"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/box_blue"
+            android:gravity="center"
+            android:text="￥30"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0.5dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/bin_10_dip"
+        android:paddingLeft="@dimen/bin_11_dip"
+        android:paddingRight="@dimen/bin_11_dip"
+        android:paddingTop="@dimen/bin_10_dip">
+
+        <TextView
+            android:layout_width="@dimen/bin_40_dip"
+            android:layout_height="@dimen/bin_40_dip"
+            android:background="@drawable/frame_orange"
+            android:gravity="center"
+            android:text="1星"
+            android:textColor="@color/white"
+            android:textSize="@dimen/bin_15_dip" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/bin_11_dip"
+            android:layout_marginRight="@dimen/bin_11_dip"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1个月续费"
+                android:textColor="@color/black"
+                android:textSize="@dimen/bin_13_dip" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/bin_5_dip"
+                android:text="12元/月"
+                android:textColor="@color/gray_99"
+                android:textSize="@dimen/bin_11_dip" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/level_buy_one_stars"
+            android:layout_width="@dimen/bin_50_dip"
+            android:layout_height="@dimen/bin_25_dip"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/box_blue"
+            android:gravity="center"
+            android:text="￥12"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/bin_11_dip"
+        android:lineSpacingMultiplier="1.5"
+        android:text="@string/level_buy_notes"
+        android:textColor="@color/gray_888888"
+        android:textSize="@dimen/bin_12_dip" />
+
+
+</LinearLayout>

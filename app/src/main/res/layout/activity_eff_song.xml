@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/orange_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <com.yhy.gvp.widget.GridViewPager
+        android:id="@+id/effect_class_list"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bin_110_dip"
+        android:visibility="visible"
+        app:num_columns="4"
+        app:page_size="8" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bin_6_dip"
+        android:background="@color/gray_f2" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/eff_song_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

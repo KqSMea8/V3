@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_edt_lin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/four_transparent">
+
+    <LinearLayout
+        android:layout_width="@dimen/bin_258_dip"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/box_white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/dialog_edt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/bin_23_dip"
+            android:layout_marginTop="@dimen/bin_11_dip"
+            android:textColor="@color/black"
+            android:textSize="@dimen/bin_14_dip" />
+
+        <EditText
+            android:id="@+id/dialog_edt_content"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bin_31_dip"
+            android:layout_marginLeft="@dimen/bin_18_dip"
+            android:layout_marginRight="@dimen/bin_18_dip"
+            android:background="@drawable/box_gray_tra_circular"
+            android:paddingLeft="@dimen/bin_12_dip"
+            android:paddingRight="@dimen/bin_12_dip"
+            android:textColor="@color/black"
+
+            android:textColorHint="@color/gray_F2EEED"
+            android:textSize="@dimen/bin_12_dip" />
+
+
+        <View
+            style="@style/line"
+            android:layout_marginTop="@dimen/bin_28_dip" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bin_40_dip"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/dialog_edt_cancel_lin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/dialog_edt_cancel"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/bin_13_dip" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/bin_5_dip"
+                    android:layout_marginTop="@dimen/bin_5_dip"
+                    android:background="@color/line" />
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/dialog_edt_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:textColor="@color/black"
+                android:textSize="@dimen/bin_13_dip" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

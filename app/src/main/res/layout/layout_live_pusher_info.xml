@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/bin_30_dip"
+    android:background="@drawable/pusher_info_background"
+    android:orientation="horizontal"
+    android:padding="@dimen/bin_1_dip"
+    tools:ignore="contentDescription">
+
+    <ImageView
+        android:id="@+id/iv_head_icon"
+        android:layout_width="@dimen/bin_30_dip"
+        android:layout_height="@dimen/bin_30_dip"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/head_me" />
+
+    <TextView
+        android:id="@+id/tv_broadcasting_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/bin_4_dip"
+        android:layout_toRightOf="@+id/iv_head_icon"
+        android:maxLines="1"
+        android:paddingRight="@dimen/bin_10_dip"
+        android:paddingTop="@dimen/bin_2_dip"
+        android:singleLine="true"
+        android:textColor="@color/colorTextWhite"
+        android:textSize="@dimen/bin_9_dip" />
+
+    <ImageView
+        android:id="@+id/iv_record_ball"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/bin_4_dip"
+        android:layout_marginTop="@dimen/bin_5_dip"
+        android:layout_toRightOf="@id/iv_head_icon"
+        android:background="@drawable/liveshow_item_dot"
+        android:scaleType="fitXY"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_host_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_record_ball"
+        android:layout_toEndOf="@+id/iv_head_icon"
+        android:layout_toRightOf="@+id/iv_head_icon"
+        android:textColor="@color/colorTextWhite"
+        android:textSize="@dimen/bin_9_dip"
+        android:visibility="visible" />
+
+
+    <TextView
+        android:id="@+id/tv_member_counts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_broadcasting_time"
+        android:layout_below="@+id/tv_broadcasting_time"
+        android:layout_gravity="center"
+        android:drawablePadding="@dimen/bin_4_dip"
+        android:textColor="@color/colorTextWhite"
+        android:textSize="@dimen/bin_9_dip" />
+
+    <TextView
+        android:id="@+id/live_follow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/bin_5_dip"
+        android:layout_toRightOf="@+id/tv_broadcasting_time"
+        android:background="@drawable/box_orange_circular"
+        android:onClick="onClick"
+        android:paddingBottom="@dimen/bin_2_dip"
+        android:paddingLeft="@dimen/bin_5_dip"
+        android:paddingRight="@dimen/bin_5_dip"
+        android:paddingTop="@dimen/bin_2_dip"
+        android:text="关注"
+        android:textColor="@color/white"
+        android:textSize="@dimen/bin_11_dip" />
+
+</RelativeLayout>

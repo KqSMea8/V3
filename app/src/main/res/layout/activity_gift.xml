@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/gift_out_side"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bin_44_dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/bin_9_dip"
+            android:paddingRight="@dimen/bin_9_dip">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="礼物"
+                android:textColor="@color/gray_33"
+                android:textSize="@dimen/bin_13_dip" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+
+            <ImageView
+                android:layout_width="@dimen/bin_15_dip"
+                android:layout_height="@dimen/bin_15_dip"
+                android:src="@mipmap/icon_coin" />
+
+            <TextView
+                android:id="@+id/gift_coin_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/bin_5_dip"
+                android:text="10"
+                android:textColor="@color/gray_33"
+                android:textSize="@dimen/bin_14_dip" />
+
+            <ImageView style="@style/right_arrow" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/line" />
+
+
+        <com.jcodecraeer.xrecyclerview.XRecyclerView
+            android:id="@+id/gift_list"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bin_170_dip"
+            android:paddingLeft="@dimen/bin_5_dip"
+            android:paddingRight="@dimen/bin_5_dip" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bin_33_dip"
+            android:background="@color/gray_f2">
+
+            <TextView
+                android:id="@+id/gift_confirm"
+                android:layout_width="@dimen/bin_70_dip"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@color/red_EF3338"
+                android:gravity="center"
+                android:text="确定"
+                android:textColor="@color/white"
+                android:textSize="@dimen/bin_13_dip" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

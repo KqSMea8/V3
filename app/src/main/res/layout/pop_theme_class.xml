@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/box_space_more"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/bin_8_dip"
+        android:paddingLeft="@dimen/bin_11_dip"
+        android:paddingRight="@dimen/bin_11_dip"
+        android:paddingTop="@dimen/bin_8_dip">
+
+        <TextView
+            android:id="@+id/pop_theme_modify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="修改"
+            android:textColor="@color/white"
+            android:textSize="@dimen/bin_13_dip" />
+
+        <TextView
+            android:id="@+id/pop_space_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/bin_9_dip"
+            android:gravity="center"
+            android:text="删除"
+            android:textColor="@color/white"
+            android:textSize="@dimen/bin_13_dip" />
+
+    </LinearLayout>
+
+</LinearLayout>

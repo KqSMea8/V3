@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.huanglong.v3.im.contacts.ProfileActivity">
+
+    <include
+        layout="@layout/orange_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <com.huanglong.v3.im.view.CircleImageView
+            android:id="@+id/profile_avatar"
+            android:layout_width="115dp"
+            android:layout_height="115dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/head_other" />
+
+        <TextView
+            android:id="@+id/profile_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/text_gray1"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <com.huanglong.v3.im.view.LineControllerView
+        android:id="@+id/profile_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:canNav="true"
+        app:isBottom="true"
+        app:name="@string/profile_now_group" />
+
+    <com.huanglong.v3.im.view.LineControllerView
+        android:id="@+id/profile_v3_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:name="v3号" />
+
+    <com.huanglong.v3.im.view.LineControllerView
+        android:id="@+id/profile_remark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:canNav="true"
+        app:name="设置备注" />
+
+    <com.huanglong.v3.im.view.LineControllerView
+        android:id="@+id/profile_blackList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:isSwitch="true"
+        app:name="@string/profile_black" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:id="@+id/profile_btnDel"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/frame_red"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/profile_del"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/profile_btnChat"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_positive_btn"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/profile_chat"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+
+</LinearLayout>

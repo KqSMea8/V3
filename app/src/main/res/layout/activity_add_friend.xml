@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.huanglong.v3.conversation.ChatActivity">
+
+    <include
+        layout="@layout/orange_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <com.huanglong.v3.im.view.CircleImageView
+            android:id="@+id/avatar"
+            android:layout_width="@dimen/bin_60_dip"
+            android:layout_height="@dimen/bin_60_dip"
+            android:layout_marginBottom="@dimen/bin_11_dip"
+            android:layout_marginLeft="@dimen/bin_11_dip"
+            android:layout_marginRight="@dimen/bin_11_dip"
+            android:layout_marginTop="@dimen/bin_11_dip"
+            android:src="@drawable/head_other" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/add_friends_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="昵称"
+                android:textColor="@color/black"
+                android:textSize="@dimen/bin_12_dip" />
+
+            <TextView
+                android:id="@+id/add_friends_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/bin_11_dip"
+                android:text="昵称"
+                android:textColor="@color/black"
+                android:textSize="@dimen/bin_11_dip" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <com.huanglong.v3.im.view.LineControllerView
+        android:id="@+id/id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        app:name="@string/profile_id" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bin_8_dip" />
+
+
+    <com.huanglong.v3.im.view.LineControllerView
+        android:id="@+id/group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        app:canNav="true"
+        app:name="@string/add_detail_group" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bin_8_dip" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="@string/add_detail_name"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editNickname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:background="@null"
+            android:clickable="true"
+            android:textCursorDrawable="@color/black"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bin_8_dip" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="@string/add_detail_message"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:background="@null"
+            android:clickable="true"
+            android:textCursorDrawable="@color/black"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line" />
+
+
+    <TextView
+        android:id="@+id/btnAdd"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/frame_red"
+        android:gravity="center"
+        android:text="@string/add_friend_send"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+
+</LinearLayout>

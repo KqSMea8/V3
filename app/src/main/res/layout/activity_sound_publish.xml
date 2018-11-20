@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_f2"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/orange_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/bin_20_dip"
+                android:paddingTop="@dimen/bin_20_dip">
+
+                <ImageView
+                    android:id="@+id/sound_publish_play"
+                    android:layout_width="@dimen/bin_60_dip"
+                    android:layout_height="@dimen/bin_60_dip"
+                    android:src="@mipmap/icon_record_play" />
+
+                <TextView
+                    android:id="@+id/sound_publish_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/bin_9_dip"
+                    android:text="点击试听"
+                    android:textColor="@color/gray_33" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/sound_publish_class_lin"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/bin_33_dip"
+                android:layout_marginTop="@dimen/bin_9_dip"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/bin_9_dip"
+                android:paddingRight="@dimen/bin_9_dip">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="分类"
+                    android:textColor="@color/gray_33"
+                    android:textSize="@dimen/bin_12_dip" />
+
+                <TextView
+                    android:id="@+id/sound_publish_class"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/bin_9_dip"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textColor="@color/gray_33"
+                    android:textSize="@dimen/bin_12_dip" />
+
+                <ImageView style="@style/right_arrow" />
+
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/sound_publish_title"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/bin_44_dip"
+                android:layout_marginTop="0.5dp"
+                android:background="@color/white"
+                android:hint="请输入标题"
+                android:paddingLeft="@dimen/bin_9_dip"
+                android:paddingRight="@dimen/bin_9_dip"
+                android:singleLine="true"
+                android:textColor="@color/gray_33"
+                android:textColorHint="@color/gray_99"
+                android:textSize="@dimen/bin_12_dip" />
+
+
+            <Button
+                android:id="@+id/sound_publish_submit"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/bin_33_dip"
+                android:layout_marginLeft="@dimen/bin_22_dip"
+                android:layout_marginRight="@dimen/bin_22_dip"
+                android:layout_marginTop="@dimen/bin_9_dip"
+                android:background="@drawable/frame_orange"
+                android:text="发布音频"
+                android:textColor="@color/white"
+                android:textSize="@dimen/bin_13_dip" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

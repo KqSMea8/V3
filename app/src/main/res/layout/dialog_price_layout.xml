@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_price_lin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/four_transparent">
+
+
+    <LinearLayout
+        android:layout_width="@dimen/bin_250_dip"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/box_white"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/bin_11_dip">
+
+        <TextView
+            android:id="@+id/dialog_price_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/bin_9_dip"
+            android:text="请选择价格"
+            android:textColor="@color/gray_33"
+            android:textSize="@dimen/bin_13_dip" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/dialog_price_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="@dimen/bin_5_dip" />
+
+
+    </LinearLayout>
+</RelativeLayout>

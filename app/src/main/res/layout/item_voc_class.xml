@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gray_f2"
+    android:orientation="vertical"
+    android:paddingBottom="0.5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="@dimen/bin_9_dip">
+
+
+        <ImageView
+            android:id="@+id/item_voc_class_cover"
+            android:layout_width="@dimen/bin_40_dip"
+            android:layout_height="@dimen/bin_40_dip"
+            android:src="@mipmap/icon_default" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_voc_class_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/bin_9_dip"
+                android:paddingRight="@dimen/bin_9_dip"
+                android:text="哈哈哈哈"
+                android:textColor="@color/gray_33"
+                android:textSize="@dimen/bin_12_dip" />
+
+            <TextView
+                android:id="@+id/item_voc_class_class"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/bin_5_dip"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/bin_9_dip"
+                android:paddingRight="@dimen/bin_9_dip"
+                android:text="哈哈哈哈"
+                android:textColor="@color/gray_66"
+                android:textSize="@dimen/bin_10_dip" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

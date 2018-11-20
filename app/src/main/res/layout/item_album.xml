@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gray_f2"
+    android:orientation="vertical"
+    android:paddingBottom="0.5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/bin_9_dip"
+        android:paddingLeft="@dimen/bin_9_dip"
+        android:paddingRight="@dimen/bin_9_dip"
+        android:paddingTop="@dimen/bin_9_dip">
+
+
+        <TextView
+            android:id="@+id/item_album_index"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/gray_66"
+            android:textSize="@dimen/bin_16_dip" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/bin_9_dip"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_album_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textColor="@color/gray_33"
+                android:textSize="@dimen/bin_14_dip" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/bin_5_dip"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/item_album_play_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/icon_sound_book_play"
+                    android:drawablePadding="@dimen/bin_5_dip"
+                    android:textColor="@color/gray_99"
+                    android:textSize="@dimen/bin_11_dip" />
+
+                <TextView
+                    android:id="@+id/item_album_comment_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/bin_11_dip"
+                    android:drawableLeft="@mipmap/icon_comment"
+                    android:drawablePadding="@dimen/bin_5_dip"
+                    android:textColor="@color/gray_99"
+                    android:textSize="@dimen/bin_11_dip"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/item_album_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray_99"
+            android:textSize="@dimen/bin_11_dip" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

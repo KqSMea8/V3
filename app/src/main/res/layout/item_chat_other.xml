@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background_gray1"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/item_chat_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/bin_5_dip"
+        android:background="@color/gray_DCDCDC"
+        android:paddingLeft="@dimen/bin_5_dip"
+        android:paddingRight="@dimen/bin_5_dip"
+        android:text="2012:11:11"
+        android:textColor="@color/white"
+        android:textSize="@dimen/bin_10_dip" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/bin_5_dip"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/bin_9_dip">
+
+        <ImageView
+            android:id="@+id/item_chat_avatar"
+            android:layout_width="@dimen/bin_40_dip"
+            android:layout_height="@dimen/bin_40_dip"
+            android:src="@drawable/head_me" />
+
+
+        <TextView
+            android:id="@+id/item_chat_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/bin_9_dip"
+            android:layout_marginTop="@dimen/bin_9_dip"
+            android:background="@drawable/bg_bubble_left"
+            android:maxWidth="@dimen/bin_200_dip"
+            android:paddingBottom="@dimen/bin_5_dip"
+            android:paddingLeft="@dimen/bin_10_dip"
+            android:paddingRight="@dimen/bin_5_dip"
+            android:paddingTop="@dimen/bin_5_dip"
+            android:text="哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈"
+            android:textColor="@color/gray_33"
+            android:textSize="@dimen/bin_12_dip" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

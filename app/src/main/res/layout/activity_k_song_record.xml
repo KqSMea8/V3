@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:waveview="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/orange_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:id="@+id/rootView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <Chronometer
+            android:id="@+id/record_timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:format="00:00"
+            android:textColor="@color/gray_33"
+            android:textSize="@dimen/bin_19_dip" />
+
+        <TextView
+            android:id="@+id/record_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/bin_9_dip"
+            android:text="00:00"
+            android:textColor="@color/gray_33"
+            android:textSize="@dimen/bin_18_dip"
+            android:visibility="gone" />
+
+        <com.shuyu.waveview.AudioWaveView
+            android:id="@+id/record_audioWave"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bin_100_dip"
+            android:layout_below="@+id/record_timer"
+            android:layout_marginTop="@dimen/bin_9_dip"
+            waveview:waveColor="@color/orange_FE552E" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/bin_20_dip">
+
+            <TextView
+                android:id="@+id/record_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/bin_9_dip"
+                android:textColor="@color/gray_33"
+                android:textSize="@dimen/bin_12_dip" />
+
+
+            <ImageView
+                android:id="@+id/record_btn"
+                android:layout_width="@dimen/bin_60_dip"
+                android:layout_height="@dimen/bin_60_dip"
+                android:src="@mipmap/icon_voice_record" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/record_merge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/bin_40_dip"
+            android:layout_marginRight="@dimen/bin_40_dip"
+            android:text="合并"
+            android:textSize="@dimen/bin_13_dip" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

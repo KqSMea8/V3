@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/orange_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <ImageView
+        android:id="@+id/create_group_avatar"
+        android:layout_width="@dimen/bin_70_dip"
+        android:layout_height="@dimen/bin_70_dip"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/bin_20_dip"
+        android:src="@mipmap/head_group" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/bin_20_dip"
+        android:background="@color/white"
+        android:padding="@dimen/bin_9_dip">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="群组名称"
+            android:textColor="@color/black"
+            android:textSize="@dimen/bin_13_dip" />
+
+        <EditText
+            android:id="@+id/create_group_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bin_33_dip"
+            android:layout_marginLeft="@dimen/bin_11_dip"
+            android:background="@drawable/box_gray_white"
+            android:gravity="right|center_vertical"
+            android:hint="请输入群组名称"
+            android:paddingLeft="@dimen/bin_5_dip"
+            android:paddingRight="@dimen/bin_5_dip"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/bin_13_dip" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bin_6_dip"
+        android:background="@color/gray_f2" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bin_44_dip"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/bin_9_dip"
+        android:paddingRight="@dimen/bin_9_dip">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="是否收费"
+            android:textColor="@color/black"
+            android:textSize="@dimen/bin_13_dip" />
+
+        <Switch
+            android:id="@+id/create_group_is_free"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/bin_20_dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:checked="false"
+            android:thumb="@drawable/thumb"
+            android:track="@drawable/track" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/create_group_price_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bin_6_dip"
+        android:background="@color/gray_f2"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/create_group_price"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bin_33_dip"
+        android:layout_marginLeft="@dimen/bin_9_dip"
+        android:layout_marginRight="@dimen/bin_9_dip"
+        android:layout_marginTop="@dimen/bin_6_dip"
+        android:background="@drawable/box_gray_white"
+        android:gravity="center_vertical"
+        android:hint="请输入收费金额"
+        android:inputType="numberDecimal"
+        android:paddingLeft="@dimen/bin_9_dip"
+        android:paddingRight="@dimen/bin_9_dip"
+        android:textColor="@color/gray_33"
+        android:textSize="@dimen/bin_13_dip"
+        android:visibility="gone" />
+
+
+    <Button
+        android:id="@+id/create_group_submit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bin_44_dip"
+        android:layout_margin="@dimen/bin_20_dip"
+        android:background="@drawable/frame_red"
+        android:text="创建群"
+        android:textColor="@color/white"
+        android:textSize="@dimen/bin_14_dip" />
+
+
+</LinearLayout>

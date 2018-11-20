@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gray_f2"
+    android:orientation="vertical"
+    android:paddingBottom="0.5dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bin_60_dip"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/bin_11_dip"
+        android:paddingRight="@dimen/bin_11_dip">
+
+
+        <TextView
+            android:id="@+id/item_account_details_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/bin_7_dip"
+            android:textColor="@color/black"
+            android:textSize="@dimen/bin_14_dip" />
+
+
+        <TextView
+            android:id="@+id/item_account_details_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/bin_14_dip" />
+
+
+        <TextView
+            android:id="@+id/item_account_details_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/bin_11_dip"
+            android:layout_marginTop="@dimen/bin_7_dip"
+            android:textColor="@color/gray_66"
+            android:textSize="@dimen/bin_11_dip" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

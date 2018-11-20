@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20dp"
+    android:orientation="horizontal">
+
+
+    <ImageView
+        android:id="@+id/btn_vod_log"
+        android:layout_width="@dimen/bin_32_dip"
+        android:layout_height="@dimen/bin_32_dip"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_toLeftOf="@+id/btn_vod_back"
+        android:background="@drawable/icon_log_off"
+        android:onClick="onClick"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/btn_vod_back"
+        android:layout_width="@dimen/bin_32_dip"
+        android:layout_height="@dimen/bin_32_dip"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/btn_close"
+        android:onClick="onClick"
+        android:visibility="gone" />
+
+
+    <LinearLayout
+        android:id="@+id/layout_progress_bar_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/bin_9_dip"
+        android:paddingRight="@dimen/bin_9_dip">
+
+        <ImageView
+            android:id="@+id/play_btn"
+            android:layout_width="@dimen/bin_32_dip"
+            android:layout_height="@dimen/bin_32_dip"
+            android:background="@drawable/play_pause"
+            android:onClick="onClick" />
+
+        <TextView
+            android:id="@+id/progress_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/bin_9_dip"
+            android:layout_weight="1"
+            android:text="00:00/00:00"
+            android:textColor="@color/white"
+            android:textSize="@dimen/bin_14_dip" />
+
+        <ImageView
+            android:id="@+id/btn_vod_share"
+            android:layout_width="@dimen/bin_32_dip"
+            android:layout_height="@dimen/bin_32_dip"
+            android:background="@mipmap/icon_live_share"
+            android:onClick="onClick" />
+
+    </LinearLayout>
+
+    <SeekBar
+        android:id="@+id/seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/layout_progress_bar_btn"
+        android:layout_gravity="center|right"
+        android:layout_weight="1"
+        android:max="110"
+        android:maxHeight="1.0dip"
+        android:minHeight="1.0dip"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:progress="0"
+        android:progressDrawable="@drawable/play_seekbar_progress" />
+</RelativeLayout>

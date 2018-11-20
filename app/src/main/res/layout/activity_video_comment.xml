@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/video_comment_lin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/four_transparent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bin_350_dip"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bin_33_dip">
+
+            <TextView
+                android:id="@+id/video_comment_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="1111条评论"
+                android:textColor="@color/gray_33"
+                android:textSize="@dimen/bin_13_dip" />
+
+            <ImageView
+                android:id="@+id/video_comment_close"
+                android:layout_width="@dimen/bin_25_dip"
+                android:layout_height="@dimen/bin_25_dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/bin_9_dip"
+                android:src="@drawable/close" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/gray_f2" />
+
+
+        <com.jcodecraeer.xrecyclerview.XRecyclerView
+            android:id="@+id/video_comment_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/gray_f2" />
+
+        <TextView
+            android:id="@+id/video_comment_send_com"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bin_33_dip"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/bin_9_dip"
+            android:text="说点什么"
+            android:textColor="@color/gray_99"
+            android:textSize="@dimen/bin_13_dip" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

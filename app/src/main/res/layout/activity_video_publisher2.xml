@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_f2"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/orange_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/video_publisher_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="top"
+                android:hint="说点什么..."
+                android:minHeight="@dimen/bin_80_dip"
+                android:padding="@dimen/bin_9_dip"
+                android:textColor="@color/gray_33"
+                android:textColorHint="@color/gray_888888"
+                android:textSize="@dimen/bin_12_dip" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0.5dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/video_publisher_cover"
+                    android:layout_width="@dimen/bin_60_dip"
+                    android:layout_height="@dimen/bin_60_dip"
+                    android:layout_margin="@dimen/bin_9_dip"
+                    android:src="@mipmap/icon_default" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/video_publisher_category_lin"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/bin_33_dip"
+                android:layout_marginTop="0.5dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/bin_9_dip"
+                android:paddingRight="@dimen/bin_9_dip">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawableLeft="@mipmap/icon_video_sel_class"
+                    android:drawablePadding="@dimen/bin_5_dip"
+                    android:gravity="center_vertical"
+                    android:text="分类"
+                    android:textColor="@color/gray_33"
+                    android:textSize="@dimen/bin_12_dip" />
+
+                <TextView
+                    android:id="@+id/video_publisher_category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="分类"
+                    android:textColor="@color/gray_33"
+                    android:textSize="@dimen/bin_12_dip" />
+
+                <ImageView style="@style/right_arrow" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/video_publisher_is_public_lin"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/bin_33_dip"
+                android:layout_marginTop="0.5dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/bin_9_dip"
+                android:paddingRight="@dimen/bin_9_dip">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawableLeft="@mipmap/icon_video_lock"
+                    android:drawablePadding="@dimen/bin_5_dip"
+                    android:gravity="center_vertical"
+                    android:text="谁可以看？"
+                    android:textColor="@color/gray_33"
+                    android:textSize="@dimen/bin_12_dip" />
+
+                <TextView
+                    android:id="@+id/video_publisher_is_public"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="公开"
+                    android:textColor="@color/gray_33"
+                    android:textSize="@dimen/bin_12_dip" />
+
+                <ImageView style="@style/right_arrow" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/bin_33_dip"
+                android:layout_marginTop="0.5dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/bin_9_dip"
+                android:paddingRight="@dimen/bin_9_dip">
+
+                <TextView
+                    android:id="@+id/video_publisher_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawableLeft="@mipmap/icon_gray_video_location"
+                    android:drawablePadding="@dimen/bin_5_dip"
+                    android:gravity="center_vertical"
+                    android:text="你在哪儿？"
+                    android:textColor="@color/gray_33"
+                    android:textSize="@dimen/bin_12_dip" />
+
+                <ImageView style="@style/right_arrow" />
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/video_publisher_submit"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/bin_33_dip"
+                android:layout_marginLeft="@dimen/bin_20_dip"
+                android:layout_marginRight="@dimen/bin_20_dip"
+                android:layout_marginTop="@dimen/bin_10_dip"
+                android:background="@drawable/frame_orange"
+                android:text="发布"
+                android:textColor="@color/white"
+                android:textSize="@dimen/bin_13_dip" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

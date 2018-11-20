@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_f2"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/orange_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bin_100_dip"
+        android:background="@color/orange_FC6C57"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/bin_11_dip"
+            android:layout_marginTop="@dimen/bin_11_dip"
+            android:text="余额账户(元)"
+            android:textColor="@color/white"
+            android:textSize="@dimen/bin_12_dip" />
+
+
+        <TextView
+            android:id="@+id/balance_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/bin_11_dip"
+            android:layout_marginTop="@dimen/bin_11_dip"
+            android:textColor="@color/white"
+            android:textSize="@dimen/bin_30_dip"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/balance_recharge"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bin_44_dip"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/bin_11_dip"
+        android:paddingRight="@dimen/bin_11_dip">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@mipmap/icon_recharge"
+            android:drawablePadding="@dimen/bin_5_dip"
+            android:text="充值"
+            android:textColor="@color/black"
+            android:textSize="@dimen/bin_12_dip" />
+
+
+        <ImageView style="@style/right_arrow" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/balance_withdrawals"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bin_44_dip"
+        android:layout_marginTop="0.5dp"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/bin_11_dip"
+        android:paddingRight="@dimen/bin_11_dip">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@mipmap/icon_withdrawals"
+            android:drawablePadding="@dimen/bin_5_dip"
+            android:text="提现"
+            android:textColor="@color/black"
+            android:textSize="@dimen/bin_12_dip" />
+
+
+        <ImageView style="@style/right_arrow" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

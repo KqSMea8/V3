@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/yellow_page_con_lin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/yellow_page_menu_lin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bin_30_dip"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/yellow_page_menu_more"
+            android:layout_width="@dimen/bin_20_dip"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/bin_9_dip"
+            android:src="@mipmap/arrow_bottom_1" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/yellow_page_menu_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/bin_9_dip" />
+
+
+    </LinearLayout>
+
+
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:id="@+id/yellow_page_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

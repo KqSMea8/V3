@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_f2"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingTop="@dimen/bin_17_dip">
+
+        <EditText
+            android:id="@+id/search_edt"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bin_33_dip"
+            android:layout_marginBottom="@dimen/bin_5_dip"
+            android:layout_marginLeft="@dimen/bin_11_dip"
+            android:layout_marginRight="@dimen/bin_11_dip"
+            android:layout_marginTop="@dimen/bin_5_dip"
+            android:layout_toLeftOf="@+id/search_cancel"
+            android:background="@drawable/box_gray_white"
+            android:drawableLeft="@mipmap/icon_seach"
+            android:drawablePadding="@dimen/bin_10_dip"
+            android:hint="请输入昵称搜索"
+            android:imeOptions="actionSearch"
+            android:paddingLeft="@dimen/bin_11_dip"
+            android:singleLine="true"
+            android:textSize="@dimen/bin_12_dip" />
+
+
+        <TextView
+            android:id="@+id/search_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/bin_11_dip"
+            android:paddingTop="@dimen/bin_17_dip"
+            android:text="取消"
+            android:textColor="@color/orange_FE552E"
+            android:textSize="@dimen/bin_13_dip" />
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/search_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/bin_10_dip" />
+
+</LinearLayout>

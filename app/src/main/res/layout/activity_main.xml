@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_rel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/contentPanel"
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bin_1_dip"
+            android:background="@color/gray_DCDCDC" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bin_44_dip">
+
+            <RadioGroup
+                android:id="@+id/main_tabs_radio_group"
+                style="@style/tab_bar">
+
+                <RadioButton
+                    android:id="@+id/tab_msg"
+                    style="@style/tab_bar_item"
+                    android:drawableTop="@drawable/tab_message"
+                    android:text="消息" />
+
+                <RadioButton
+                    android:id="@+id/tab_friends"
+                    style="@style/tab_bar_item"
+                    android:drawableTop="@drawable/tab_friends"
+                    android:text="友圈" />
+
+
+                <ImageView
+                    android:id="@+id/tab_plus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@mipmap/icon_plus" />
+
+                <RadioButton
+                    android:id="@+id/tab_recommend"
+                    style="@style/tab_bar_item"
+                    android:drawableTop="@drawable/tab_mall"
+                    android:text="主页" />
+
+                <RadioButton
+                    android:id="@+id/tab_mine"
+                    style="@style/tab_bar_item"
+                    android:drawableTop="@drawable/tab_mine"
+                    android:text="我的" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <include
+        layout="@layout/view_add"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <FrameLayout
+        android:id="@+id/main_adsFl"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="visible" />
+
+</RelativeLayout>

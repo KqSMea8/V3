@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_f2"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/orange_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="@dimen/bin_9_dip">
+
+        <ImageView
+            android:id="@+id/yel_release_cover"
+            android:layout_width="@dimen/bin_50_dip"
+            android:layout_height="@dimen/bin_50_dip"
+            android:src="@mipmap/icon_add_picture" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/yel_release_class_lin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bin_33_dip"
+        android:layout_marginTop="@dimen/bin_6_dip"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/bin_9_dip"
+        android:paddingRight="@dimen/bin_9_dip">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="分类"
+            android:textColor="@color/gray_33"
+            android:textSize="@dimen/bin_13_dip" />
+
+        <TextView
+            android:id="@+id/yel_release_class"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray_33"
+            android:textSize="@dimen/bin_13_dip" />
+
+        <ImageView style="@style/right_arrow" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bin_33_dip"
+        android:layout_marginTop="0.5dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/bin_9_dip"
+        android:paddingRight="@dimen/bin_9_dip">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="标题"
+            android:textColor="@color/gray_33"
+            android:textSize="@dimen/bin_13_dip" />
+
+        <EditText
+            android:id="@+id/yel_release_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:gravity="center_vertical|right"
+            android:hint="请输入标题"
+            android:lines="1"
+            android:paddingLeft="@dimen/bin_9_dip"
+            android:textColor="@color/gray_33"
+            android:textColorHint="@color/gray_99"
+            android:textSize="@dimen/bin_12_dip" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/yel_release_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/bin_6_dip"
+        android:background="@color/white"
+        android:gravity="top"
+        android:hint="请输入发布内容"
+        android:minHeight="@dimen/bin_80_dip"
+        android:padding="@dimen/bin_9_dip"
+        android:textSize="@dimen/bin_12_dip" />
+
+
+    <Button
+        android:id="@+id/yel_release_submit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bin_33_dip"
+        android:layout_margin="@dimen/bin_20_dip"
+        android:background="@drawable/frame_orange"
+        android:text="提交"
+        android:textColor="@color/white"
+        android:textSize="@dimen/bin_13_dip"
+
+        />
+
+</LinearLayout>

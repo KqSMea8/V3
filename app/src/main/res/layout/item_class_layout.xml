@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/bin_50_dip"
+    android:layout_height="@dimen/bin_33_dip"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/item_class_name"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="招工"
+        android:textColor="@color/gray_33"
+        android:textSize="@dimen/bin_11_dip" />
+
+    <View
+        android:id="@+id/item_class_line"
+        android:layout_width="@dimen/bin_33_dip"
+        android:layout_height="0.5dp"
+        android:background="@color/colorAccent" />
+
+
+</LinearLayout>

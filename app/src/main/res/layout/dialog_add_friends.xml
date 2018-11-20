@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_add_friends_lin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/four_transparent">
+
+
+    <LinearLayout
+        android:layout_width="@dimen/bin_200_dip"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/box_white"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/bin_11_dip">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/bin_5_dip"
+            android:text="加该好友需要支付(元)"
+            android:textColor="@color/black"
+            android:textSize="@dimen/bin_12_dip" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/bin_10_dip"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/bin_11_dip"
+            android:paddingRight="@dimen/bin_11_dip">
+
+            <TextView
+                android:id="@+id/dialog_add_friends_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/box_gray_white"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/dialog_add_friends_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/bin_5_dip"
+                android:layout_weight="1"
+                android:background="@drawable/box_gray_white"
+                android:gravity="center"
+                android:text="2"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/dialog_add_friends_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/bin_5_dip"
+                android:layout_weight="1"
+                android:background="@drawable/box_gray_white"
+                android:gravity="center"
+                android:text="3"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/dialog_add_friends_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/bin_5_dip"
+                android:layout_weight="1"
+                android:background="@drawable/box_gray_white"
+                android:gravity="center"
+                android:text="4"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/dialog_add_friends_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/bin_5_dip"
+                android:layout_weight="1"
+                android:background="@drawable/box_gray_white"
+                android:gravity="center"
+                android:text="5"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/bin_10_dip"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/bin_11_dip"
+            android:paddingRight="@dimen/bin_11_dip">
+
+            <TextView
+                android:id="@+id/dialog_add_friends_6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/box_gray_white"
+                android:gravity="center"
+                android:text="6"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/dialog_add_friends_7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/bin_5_dip"
+                android:layout_weight="1"
+                android:background="@drawable/box_gray_white"
+                android:gravity="center"
+                android:text="7"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/dialog_add_friends_8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/bin_5_dip"
+                android:layout_weight="1"
+                android:background="@drawable/box_gray_white"
+                android:gravity="center"
+                android:text="8"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/dialog_add_friends_9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/bin_5_dip"
+                android:layout_weight="1"
+                android:background="@drawable/box_gray_white"
+                android:gravity="center"
+                android:text="9"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/dialog_add_friends_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/bin_5_dip"
+                android:layout_weight="1"
+                android:background="@drawable/box_gray_white"
+                android:gravity="center"
+                android:text="10"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/four_transparent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/pop_share_lin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/bin_10_dip"
+        android:paddingLeft="@dimen/bin_12_dip"
+        android:paddingRight="@dimen/bin_12_dip"
+        android:paddingTop="@dimen/bin_10_dip">
+
+
+        <LinearLayout
+            android:id="@+id/pop_share_wechat_friends"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/bin_35_dip"
+                android:layout_height="@dimen/bin_35_dip"
+                android:scaleType="fitXY"
+                android:src="@mipmap/icon_wechat_friend" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/bin_5_dip"
+                android:text="微信好友"
+                android:textColor="@color/black"
+                android:textSize="@dimen/bin_10_dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pop_share_wechat_circle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/bin_35_dip"
+                android:layout_height="@dimen/bin_35_dip"
+                android:scaleType="fitXY"
+                android:src="@mipmap/icon_wechat_circle" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/bin_5_dip"
+                android:text="朋友圈"
+                android:textColor="@color/black"
+                android:textSize="@dimen/bin_10_dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pop_share_qq"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/bin_35_dip"
+                android:layout_height="@dimen/bin_35_dip"
+                android:scaleType="fitXY"
+                android:src="@mipmap/icon_qq" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/bin_5_dip"
+                android:text="QQ"
+                android:textColor="@color/black"
+                android:textSize="@dimen/bin_10_dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pop_share_qq_zone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/bin_35_dip"
+                android:layout_height="@dimen/bin_35_dip"
+                android:scaleType="fitXY"
+                android:src="@mipmap/icon_qq_zone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/bin_5_dip"
+                android:text="QQ空间"
+                android:textColor="@color/black"
+                android:textSize="@dimen/bin_10_dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pop_share_copy_link"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/bin_35_dip"
+                android:layout_height="@dimen/bin_35_dip"
+                android:scaleType="fitXY"
+                android:src="@mipmap/icon_copy_link" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/bin_5_dip"
+                android:text="复制链接"
+                android:textColor="@color/black"
+                android:textSize="@dimen/bin_10_dip" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

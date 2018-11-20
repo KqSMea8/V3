@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/orange_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bin_42_dip"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/location_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/bin_9_dip"
+            android:text="北京市"
+            android:textColor="@color/gray_33"
+            android:textSize="@dimen/bin_12_dip" />
+
+        <AutoCompleteTextView
+            android:id="@+id/keyWord"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bin_36_dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/bin_9_dip"
+            android:layout_marginRight="@dimen/bin_9_dip"
+            android:layout_weight="1"
+            android:background="@drawable/box_gray_white"
+            android:completionThreshold="1"
+            android:dropDownVerticalOffset="1.0dip"
+            android:focusable="true"
+            android:hint="请输入关键字"
+            android:imeOptions="actionDone"
+            android:inputType="text|textAutoComplete"
+            android:maxLength="20"
+            android:paddingLeft="@dimen/bin_9_dip"
+            android:paddingRight="@dimen/bin_9_dip"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textColorHint="#C0C0C0"
+            android:textSize="@dimen/bin_12_dip" />
+
+    </LinearLayout>
+
+
+    <com.amap.api.maps.MapView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bin_220_dip" />
+
+    <ListView
+        android:id="@+id/loaction_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/map"
+        android:layout_weight="1"
+        android:cacheColorHint="#00000000"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1px" />
+
+
+</LinearLayout>

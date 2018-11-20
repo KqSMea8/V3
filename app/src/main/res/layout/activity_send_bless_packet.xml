@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_f2"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/orange_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/bin_11_dip"
+                android:layout_marginRight="@dimen/bin_11_dip"
+                android:layout_marginTop="@dimen/bin_50_dip"
+                android:background="@drawable/box_white"
+                android:minHeight="@dimen/bin_100_dip"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/bin_11_dip"
+                android:paddingLeft="@dimen/bin_11_dip"
+                android:paddingRight="@dimen/bin_11_dip"
+                android:paddingTop="@dimen/bin_35_dip">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="标题"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/bin_13_dip" />
+
+                    <EditText
+                        android:id="@+id/sends_bless_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/bin_33_dip"
+                        android:layout_marginLeft="@dimen/bin_11_dip"
+                        android:background="@drawable/box_gray_white"
+                        android:hint="请输入标题"
+                        android:paddingLeft="@dimen/bin_11_dip"
+                        android:paddingRight="@dimen/bin_11_dip"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/gray_888888"
+                        android:textSize="@dimen/bin_12_dip" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/bin_11_dip"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="内容"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/bin_13_dip" />
+
+                    <EditText
+                        android:id="@+id/sends_bless_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/bin_33_dip"
+                        android:layout_marginLeft="@dimen/bin_11_dip"
+                        android:background="@drawable/box_gray_white"
+                        android:hint="请输入内容"
+                        android:maxLength="100"
+                        android:paddingLeft="@dimen/bin_11_dip"
+                        android:paddingRight="@dimen/bin_11_dip"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/gray_888888"
+                        android:textSize="@dimen/bin_12_dip" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/bin_11_dip"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="设置口令"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/bin_13_dip" />
+
+                    <EditText
+                        android:id="@+id/sends_bless_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/bin_33_dip"
+                        android:layout_marginLeft="@dimen/bin_11_dip"
+                        android:background="@drawable/box_gray_white"
+                        android:hint="请输入口令"
+                        android:paddingLeft="@dimen/bin_11_dip"
+                        android:paddingRight="@dimen/bin_11_dip"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/gray_888888"
+                        android:textSize="@dimen/bin_12_dip" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/bin_5_dip"
+                    android:text="小伙伴们输入对的口令就能获得随机的打赏"
+                    android:textSize="@dimen/bin_10_dip" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/bin_11_dip"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="赏金(元)"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/bin_13_dip" />
+
+                    <EditText
+                        android:id="@+id/sends_bless_money"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/bin_33_dip"
+                        android:layout_marginLeft="@dimen/bin_11_dip"
+                        android:background="@drawable/box_gray_white"
+                        android:hint="请输入赏金"
+                        android:inputType="number"
+                        android:paddingLeft="@dimen/bin_11_dip"
+                        android:paddingRight="@dimen/bin_11_dip"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/gray_888888"
+                        android:textSize="@dimen/bin_12_dip" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/bin_11_dip"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="数量(个)"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/bin_13_dip" />
+
+                    <EditText
+                        android:id="@+id/sends_bless_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/bin_33_dip"
+                        android:layout_marginLeft="@dimen/bin_11_dip"
+                        android:background="@drawable/box_gray_white"
+                        android:hint="请输入数量"
+                        android:inputType="number"
+                        android:paddingLeft="@dimen/bin_11_dip"
+                        android:paddingRight="@dimen/bin_11_dip"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/gray_888888"
+                        android:textSize="@dimen/bin_12_dip" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/bin_20_dip"
+                    android:text="需支付￥0.00元服务费"
+                    android:textSize="@dimen/bin_10_dip" />
+
+                <Button
+                    android:id="@+id/sends_bless_submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bin_33_dip"
+                    android:layout_marginTop="@dimen/bin_5_dip"
+                    android:background="@drawable/frame_red"
+                    android:text="生成福包口令"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/bin_13_dip" />
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/send_bless_avatar"
+                android:layout_width="@dimen/bin_60_dip"
+                android:layout_height="@dimen/bin_60_dip"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/bin_20_dip"
+                android:src="@drawable/head_me" />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

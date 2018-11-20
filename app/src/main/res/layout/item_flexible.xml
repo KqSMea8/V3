@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gray_f2"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/bin_6_dip">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/bin_9_dip"
+        android:paddingLeft="@dimen/bin_9_dip"
+        android:paddingRight="@dimen/bin_9_dip">
+
+        <ImageView
+            android:id="@+id/item_flexible_img"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bin_178_dip"
+            android:scaleType="fitXY"
+            android:src="@mipmap/icon_default" />
+
+        <TextView
+            android:id="@+id/item_flexible_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/bin_9_dip"
+            android:textColor="@color/gray_33"
+            android:textSize="@dimen/bin_13_dip" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bin_36_dip"
+        android:layout_marginTop="0.5dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/bin_9_dip"
+        android:paddingRight="@dimen/bin_9_dip">
+
+        <TextView
+            android:id="@+id/item_flexible_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@mipmap/icon_time"
+            android:drawablePadding="@dimen/bin_5_dip"
+            android:textColor="@color/gray_99"
+            android:textSize="@dimen/bin_12_dip" />
+
+        <TextView
+            android:id="@+id/item_flexible_works"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/icon_works"
+            android:drawablePadding="@dimen/bin_5_dip"
+            android:textColor="@color/gray_99"
+            android:textSize="@dimen/bin_12_dip" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

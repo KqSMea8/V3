@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_home_pop"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/bin_10_dip">
+
+
+        <TextView
+            android:id="@+id/pop_add_scan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/bin_10_dip"
+            android:drawableLeft="@mipmap/icon_scan"
+            android:drawablePadding="@dimen/bin_9_dip"
+            android:text="扫一扫"
+            android:textColor="@color/white"
+            android:textSize="@dimen/bin_12_dip" />
+
+        <TextView
+            android:id="@+id/pop_add_found_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/bin_10_dip"
+            android:drawableLeft="@mipmap/icon_send_msg"
+            android:drawablePadding="@dimen/bin_7_dip"
+            android:text="发起群聊"
+            android:textColor="@color/white"
+            android:textSize="@dimen/bin_12_dip" />
+
+        <TextView
+            android:id="@+id/pop_add_friends"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/bin_15_dip"
+            android:drawableLeft="@mipmap/icon_add_friends"
+            android:drawablePadding="@dimen/bin_7_dip"
+            android:text="添加朋友"
+            android:textColor="@color/white"
+            android:textSize="@dimen/bin_12_dip" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_f2"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/orange_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/follow_tab"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bin_39_dip"
+        android:layout_marginBottom="0.5dp"
+        android:background="@color/white"
+        app:tabBackground="@color/white"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="@color/orange_FE552E"
+        app:tabTextAppearance="@style/TabLayoutTextStyle"
+        app:tabTextColor="@color/gray_33">
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/follow_tab_at_me"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AT我" />
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/follow_tab_k_song"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="K歌" />
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/follow_tab_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="视频" />
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/follow_tab_live"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="直播" />
+    </android.support.design.widget.TabLayout>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/follow_tab_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>

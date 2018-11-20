@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gray_f2"
+    android:orientation="vertical"
+    android:paddingBottom="0.5dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="@dimen/bin_9_dip">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/item_my_contacts_avatar"
+                android:layout_width="@dimen/bin_40_dip"
+                android:layout_height="@dimen/bin_40_dip"
+                android:src="@drawable/head_me" />
+
+            <ImageView
+                android:id="@+id/item_contacts_enterprise"
+                android:layout_width="@dimen/bin_10_dip"
+                android:layout_height="@dimen/bin_10_dip"
+                android:layout_alignBottom="@+id/item_my_contacts_avatar"
+                android:layout_alignRight="@+id/item_my_contacts_avatar"
+                android:src="@mipmap/icon_enterprise"
+                android:visibility="visible" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/item_my_contacts_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/bin_9_dip"
+            android:layout_weight="1"
+            android:textColor="@color/gray_33"
+            android:textSize="@dimen/bin_13_dip" />
+
+
+        <ImageView
+            android:id="@+id/item_my_contacts_radio"
+            android:layout_width="@dimen/bin_20_dip"
+            android:layout_height="@dimen/bin_20_dip"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/icon_radio_normal"
+            android:visibility="gone" />
+    </LinearLayout>
+</LinearLayout>

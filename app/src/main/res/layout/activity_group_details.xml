@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_f2"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/orange_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/group_details_member_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/bin_9_dip"
+        android:paddingEnd="@dimen/bin_9_dip"
+        android:paddingLeft="@dimen/bin_9_dip"
+        android:paddingRight="@dimen/bin_9_dip" />
+
+
+    <LinearLayout
+        android:id="@+id/group_details_modify_avatar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/bin_6_dip"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="@dimen/bin_9_dip">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="群头像"
+            android:textColor="@color/gray_33"
+            android:textSize="@dimen/bin_13_dip" />
+
+
+        <ImageView
+            android:id="@+id/group_details_avatar"
+            android:layout_width="@dimen/bin_40_dip"
+            android:layout_height="@dimen/bin_40_dip"
+            android:src="@mipmap/head_group" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/group_details_modify_name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bin_33_dip"
+        android:layout_marginTop="0.5dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/bin_9_dip"
+        android:paddingRight="@dimen/bin_9_dip">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="群名称"
+            android:textColor="@color/gray_33"
+            android:textSize="@dimen/bin_13_dip" />
+
+        <TextView
+            android:id="@+id/group_details_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="right|center_vertical"
+            android:text="群名称"
+            android:textColor="@color/gray_33"
+            android:textSize="@dimen/bin_13_dip" />
+
+        <ImageView
+            style="@style/right_arrow"
+            android:layout_gravity="center_vertical" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/group_details_space"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bin_33_dip"
+        android:layout_marginTop="0.5dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/bin_9_dip"
+        android:paddingRight="@dimen/bin_9_dip">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="空间"
+            android:textColor="@color/gray_33"
+            android:textSize="@dimen/bin_13_dip" />
+
+
+        <ImageView
+            style="@style/right_arrow"
+            android:layout_gravity="center_vertical" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/group_details_msg_disturb_lin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bin_33_dip"
+        android:layout_marginTop="0.5dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/bin_9_dip"
+        android:paddingRight="@dimen/bin_9_dip">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="消息免打扰"
+            android:textColor="@color/gray_33"
+            android:textSize="@dimen/bin_13_dip" />
+
+        <Switch
+            android:id="@+id/group_details_msg_disturb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="right|center_vertical"
+            android:textColor="@color/gray_33"
+            android:textSize="@dimen/bin_13_dip" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/group_details_qr_code"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bin_33_dip"
+        android:layout_marginTop="@dimen/bin_6_dip"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/bin_9_dip"
+        android:paddingRight="@dimen/bin_9_dip">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="群二维码"
+            android:textColor="@color/gray_33"
+            android:textSize="@dimen/bin_13_dip" />
+
+
+        <ImageView
+            android:layout_width="@dimen/bin_20_dip"
+            android:layout_height="@dimen/bin_20_dip"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/icon_qr_code" />
+
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/group_details_send"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bin_33_dip"
+        android:layout_marginLeft="@dimen/bin_20_dip"
+        android:layout_marginRight="@dimen/bin_20_dip"
+        android:layout_marginTop="@dimen/bin_10_dip"
+        android:background="@drawable/bg_positive_btn"
+        android:text="发送消息"
+        android:textColor="@color/white"
+        android:textSize="@dimen/bin_13_dip" />
+
+    <Button
+        android:id="@+id/group_details_sign_out"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bin_33_dip"
+        android:layout_marginLeft="@dimen/bin_20_dip"
+        android:layout_marginRight="@dimen/bin_20_dip"
+        android:layout_marginTop="@dimen/bin_10_dip"
+        android:background="@drawable/frame_red"
+        android:text="退出"
+        android:textColor="@color/white"
+        android:textSize="@dimen/bin_13_dip" />
+
+
+</LinearLayout>

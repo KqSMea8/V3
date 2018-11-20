@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/orange_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/release_circle_edt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="top"
+                android:hint="这一刻的想法..."
+                android:maxHeight="@dimen/bin_200_dip"
+                android:minHeight="@dimen/bin_60_dip"
+                android:padding="@dimen/bin_11_dip"
+                android:textSize="@dimen/bin_13_dip" />
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/release_circle_pic_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/bin_20_dip" />
+
+
+            <RadioGroup
+                android:id="@+id/release_circle_type"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/bin_33_dip"
+                android:layout_marginTop="@dimen/bin_10_dip"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/bin_11_dip"
+                android:paddingRight="@dimen/bin_11_dip">
+
+                <RadioButton
+                    android:id="@+id/release_circle_type_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:text="友圈" />
+
+                <RadioButton
+                    android:id="@+id/release_circle_type_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="社圈" />
+            </RadioGroup>
+
+            <View
+                android:id="@+id/release_circle_class_line"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="@dimen/bin_5_dip"
+                android:background="@color/gray_f2"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/release_circle_class_lin"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/bin_33_dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/bin_9_dip"
+                android:paddingRight="@dimen/bin_9_dip"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="分类"
+                    android:textColor="@color/gray_33"
+                    android:textSize="@dimen/bin_13_dip" />
+
+                <TextView
+                    android:id="@+id/release_circle_class"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textColor="@color/gray_33"
+                    android:textSize="@dimen/bin_13_dip" />
+
+                <ImageView style="@style/right_arrow" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

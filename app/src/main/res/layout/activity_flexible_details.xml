@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/orange_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/flexible_details_img"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/bin_150_dip"
+                android:scaleType="fitXY"
+                android:src="@mipmap/icon_default" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/bin_9_dip"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/bin_9_dip"
+                android:paddingRight="@dimen/bin_9_dip">
+
+                <TextView
+                    android:id="@+id/flexible_details_is_free"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/blue_45C3FB"
+                    android:paddingBottom="@dimen/bin_3_dip"
+                    android:paddingLeft="@dimen/bin_5_dip"
+                    android:paddingRight="@dimen/bin_5_dip"
+                    android:paddingTop="@dimen/bin_3_dip"
+                    android:text="免费"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/bin_9_dip" />
+
+                <TextView
+                    android:id="@+id/flexible_details_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/bin_9_dip"
+                    android:textColor="@color/gray_33"
+                    android:textSize="@dimen/bin_12_dip" />
+
+
+                <TextView
+                    android:id="@+id/flexible_details_enroll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/bin_5_dip"
+                    android:drawableLeft="@mipmap/icon_people_number"
+                    android:drawablePadding="@dimen/bin_5_dip"
+                    android:text="168报名"
+                    android:textColor="@color/gray_888888"
+                    android:textSize="@dimen/bin_10_dip" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="@dimen/bin_9_dip"
+                    android:background="@color/line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bin_33_dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@mipmap/icon_time"
+                        android:drawablePadding="@dimen/bin_5_dip"
+                        android:text="时间"
+                        android:textColor="@color/gray_33"
+                        android:textSize="@dimen/bin_13_dip" />
+
+                    <TextView
+                        android:id="@+id/flexible_details_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:textColor="@color/gray_99"
+                        android:textSize="@dimen/bin_12_dip" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/line" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bin_33_dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@mipmap/icon_location"
+                        android:drawablePadding="@dimen/bin_5_dip"
+                        android:text="地区"
+                        android:textColor="@color/gray_33"
+                        android:textSize="@dimen/bin_13_dip" />
+
+                    <TextView
+                        android:id="@+id/flexible_details_region"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:textColor="@color/gray_99"
+                        android:textSize="@dimen/bin_12_dip" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/line" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bin_33_dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@mipmap/icon_people_number"
+                        android:drawablePadding="@dimen/bin_5_dip"
+                        android:text="人数(限报)"
+                        android:textColor="@color/gray_33"
+                        android:textSize="@dimen/bin_13_dip" />
+
+                    <TextView
+                        android:id="@+id/flexible_details_max_enroll_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:textColor="@color/gray_99"
+                        android:textSize="@dimen/bin_12_dip" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/bin_6_dip"
+                android:background="@color/gray_f2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/bin_9_dip"
+                android:layout_marginLeft="@dimen/bin_9_dip"
+                android:layout_marginTop="@dimen/bin_9_dip"
+                android:text="活动描述"
+                android:textColor="@color/gray_33"
+                android:textSize="@dimen/bin_13_dip" />
+
+            <WebView
+                android:id="@+id/flexible_details_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="WebViewLayout" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/flexible_details_btn_enroll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bin_33_dip"
+        android:layout_marginBottom="@dimen/bin_9_dip"
+        android:layout_marginLeft="@dimen/bin_20_dip"
+        android:layout_marginRight="@dimen/bin_20_dip"
+        android:layout_marginTop="@dimen/bin_5_dip"
+        android:background="@drawable/frame_orange"
+        android:text="我要报名"
+        android:textColor="@color/white"
+        android:textSize="@dimen/bin_13_dip" />
+
+</LinearLayout>

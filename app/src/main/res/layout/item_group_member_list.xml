@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gray_f2"
+    android:orientation="vertical"
+    android:paddingBottom="0.5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/bin_5_dip"
+        android:paddingLeft="@dimen/bin_9_dip"
+        android:paddingRight="@dimen/bin_9_dip"
+        android:paddingTop="@dimen/bin_5_dip">
+
+        <ImageView
+            android:id="@+id/item_group_member_avatar"
+            android:layout_width="@dimen/bin_40_dip"
+            android:layout_height="@dimen/bin_40_dip"
+            android:src="@drawable/head_me" />
+
+        <TextView
+            android:id="@+id/item_group_member_nickname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/bin_9_dip"
+            android:layout_marginRight="@dimen/bin_9_dip"
+            android:layout_weight="1"
+            android:text="哈哈哈"
+            android:textColor="@color/gray_33"
+            android:textSize="@dimen/bin_13_dip" />
+
+        <ImageView
+            android:id="@+id/item_group_member_radio"
+            android:layout_width="@dimen/bin_20_dip"
+            android:layout_height="@dimen/bin_20_dip"
+            android:src="@mipmap/icon_radio_normal" />
+    </LinearLayout>
+
+
+</LinearLayout>

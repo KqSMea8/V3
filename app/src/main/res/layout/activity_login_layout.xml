@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/bin_10_dip">
+
+
+            <EditText
+                android:id="@+id/login_edt_account"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/bin_49_dip"
+                android:layout_marginLeft="@dimen/bin_22_dip"
+                android:layout_marginRight="@dimen/bin_22_dip"
+                android:layout_marginTop="@dimen/bin_13_dip"
+                android:background="@drawable/frame_grey"
+                android:drawableLeft="@mipmap/icon_phone"
+                android:drawablePadding="@dimen/bin_10_dip"
+                android:hint="@string/fill_in_phone"
+                android:paddingLeft="@dimen/bin_12_dip"
+                android:paddingRight="@dimen/bin_12_dip"
+                android:singleLine="true"
+                android:textSize="@dimen/bin_15_dip" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/bin_49_dip"
+                android:layout_marginLeft="@dimen/bin_22_dip"
+                android:layout_marginRight="@dimen/bin_22_dip"
+                android:layout_marginTop="@dimen/bin_13_dip"
+                android:background="@drawable/frame_grey"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/bin_10_dip">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_code" />
+
+                <EditText
+                    android:id="@+id/login_edt_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="@string/fill_in_password"
+                    android:inputType="textPassword"
+                    android:paddingLeft="@dimen/bin_12_dip"
+                    android:paddingRight="@dimen/bin_12_dip"
+                    android:singleLine="true"
+                    android:textSize="@dimen/bin_15_dip" />
+
+                <ImageView
+                    android:id="@+id/login_edt_password_display"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/bin_10_dip"
+                    android:src="@mipmap/icon_hides" />
+
+            </LinearLayout>
+
+
+            <RadioGroup
+                android:id="@+id/login_type"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/bin_33_dip"
+                android:layout_marginLeft="@dimen/bin_20_dip"
+                android:layout_marginRight="@dimen/bin_20_dip"
+                android:layout_marginTop="@dimen/bin_9_dip"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/login_type_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:paddingLeft="@dimen/bin_9_dip"
+                    android:text="个人"
+                    android:textColor="@color/gray_33"
+                    android:textSize="@dimen/bin_13_dip" />
+
+                <RadioButton
+                    android:id="@+id/login_type_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="@dimen/bin_9_dip"
+                    android:text="企业"
+                    android:textColor="@color/gray_33"
+                    android:textSize="@dimen/bin_13_dip" />
+
+
+            </RadioGroup>
+
+
+            <Button
+                android:id="@+id/login_btn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/bin_43_dip"
+                android:layout_marginLeft="@dimen/bin_20_dip"
+                android:layout_marginRight="@dimen/bin_20_dip"
+                android:layout_marginTop="@dimen/bin_20_dip"
+                android:background="@drawable/frame_red"
+                android:text="@string/login"
+                android:textColor="@color/white"
+                android:textSize="@dimen/bin_16_dip" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/bin_10_dip">
+
+                <TextView
+                    android:id="@+id/login_forget_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/bin_22_dip"
+                    android:text="@string/forget_password_mark"
+                    android:textColor="@color/gray_888888"
+                    android:textSize="@dimen/bin_12_dip" />
+
+                <TextView
+                    android:id="@+id/login_register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/bin_22_dip"
+                    android:text="@string/now_register"
+                    android:textColor="@color/gray_888888"
+                    android:textSize="@dimen/bin_12_dip" />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

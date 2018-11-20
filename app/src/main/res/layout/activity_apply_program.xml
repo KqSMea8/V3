@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_F5F5F5"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/orange_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:id="@+id/apply_program_modify_avatar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/bin_9_dip">
+
+        <ImageView
+            android:id="@+id/apply_program_avatar"
+            android:layout_width="@dimen/bin_40_dip"
+            android:layout_height="@dimen/bin_40_dip"
+            android:src="@drawable/head_me" />
+
+        <ImageView style="@style/right_arrow" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bin_33_dip"
+        android:layout_marginTop="@dimen/bin_6_dip"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/bin_9_dip"
+        android:paddingRight="@dimen/bin_9_dip">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="小程序名称"
+            android:textColor="@color/black"
+            android:textSize="@dimen/bin_12_dip" />
+
+        <EditText
+            android:id="@+id/apply_program_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/bin_11_dip"
+            android:background="@null"
+            android:gravity="right|center_vertical"
+            android:hint="请输入小程序名称"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray_888888"
+            android:textSize="@dimen/bin_12_dip" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bin_33_dip"
+        android:layout_marginTop="0.5dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/bin_9_dip"
+        android:paddingRight="@dimen/bin_9_dip">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="公司名称"
+            android:textColor="@color/black"
+            android:textSize="@dimen/bin_12_dip" />
+
+        <EditText
+            android:id="@+id/apply_program_company_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/bin_11_dip"
+            android:background="@null"
+            android:gravity="right|center_vertical"
+            android:hint="请输入公司名称"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray_888888"
+            android:textSize="@dimen/bin_12_dip" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bin_33_dip"
+        android:layout_marginTop="0.5dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/bin_9_dip"
+        android:paddingRight="@dimen/bin_9_dip">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="联系人"
+            android:textColor="@color/black"
+            android:textSize="@dimen/bin_12_dip" />
+
+        <EditText
+            android:id="@+id/apply_program_contacts"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/bin_11_dip"
+            android:background="@null"
+            android:gravity="right|center_vertical"
+            android:hint="请输入联系人"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray_888888"
+            android:textSize="@dimen/bin_12_dip" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bin_33_dip"
+        android:layout_marginTop="0.5dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/bin_9_dip"
+        android:paddingRight="@dimen/bin_9_dip">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="电话"
+            android:textColor="@color/black"
+            android:textSize="@dimen/bin_12_dip" />
+
+        <EditText
+            android:id="@+id/apply_program_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/bin_11_dip"
+            android:background="@null"
+            android:gravity="right|center_vertical"
+            android:hint="请输入电话"
+            android:inputType="phone"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray_888888"
+            android:textSize="@dimen/bin_12_dip" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/apply_program_class_lin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bin_33_dip"
+        android:layout_marginTop="0.5dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/bin_9_dip"
+        android:paddingRight="@dimen/bin_9_dip">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="职业"
+            android:textColor="@color/black"
+            android:textSize="@dimen/bin_12_dip" />
+
+        <TextView
+            android:id="@+id/apply_program_class"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/bin_11_dip"
+            android:layout_marginRight="@dimen/bin_9_dip"
+            android:layout_weight="1"
+            android:gravity="right|center_vertical"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/bin_12_dip" />
+
+        <ImageView style="@style/right_arrow" />
+    </LinearLayout>
+
+
+    <RadioGroup
+        android:id="@+id/apply_program_type"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bin_33_dip"
+        android:layout_marginTop="0.5dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/bin_9_dip"
+        android:paddingRight="@dimen/bin_9_dip">
+
+        <RadioButton
+            android:id="@+id/apply_program_type_wechat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="微信小程序"
+            android:textSize="@dimen/bin_12_dip" />
+
+        <RadioButton
+            android:id="@+id/apply_program_type_h5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="H5页面"
+            android:textSize="@dimen/bin_12_dip" />
+    </RadioGroup>
+
+
+    <Button
+        android:id="@+id/apply_program_submit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bin_40_dip"
+        android:layout_marginLeft="@dimen/bin_20_dip"
+        android:layout_marginRight="@dimen/bin_20_dip"
+        android:layout_marginTop="@dimen/bin_20_dip"
+        android:background="@drawable/frame_red"
+        android:text="申请小程序"
+        android:textColor="@color/white"
+        android:textSize="@dimen/bin_14_dip" />
+
+
+</LinearLayout>

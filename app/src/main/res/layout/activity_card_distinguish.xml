@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_f2"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/orange_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bin_44_dip"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/bin_11_dip"
+        android:paddingRight="@dimen/bin_11_dip">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="真实姓名"
+            android:textColor="@color/gray_33"
+            android:textSize="@dimen/bin_13_dip" />
+
+        <EditText
+            android:id="@+id/card_id_real_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/bin_11_dip"
+            android:background="@color/white"
+            android:gravity="center_vertical|right"
+            android:hint="请输入真实姓名"
+            android:singleLine="true"
+            android:textColor="@color/gray_33"
+            android:textColorHint="@color/gray_888888"
+            android:textSize="@dimen/bin_13_dip" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bin_44_dip"
+        android:layout_marginTop="0.5dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/bin_11_dip"
+        android:paddingRight="@dimen/bin_11_dip">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="身份证号"
+            android:textColor="@color/gray_33"
+            android:textSize="@dimen/bin_13_dip" />
+
+        <EditText
+            android:id="@+id/card_id_number"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/bin_11_dip"
+            android:background="@color/white"
+            android:digits="1234567890Xx"
+            android:gravity="center_vertical|right"
+            android:hint="请输入身份证号"
+            android:singleLine="true"
+            android:textColor="@color/gray_33"
+            android:textColorHint="@color/gray_888888"
+            android:textSize="@dimen/bin_13_dip" />
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/card_selected_id_img"
+        android:layout_width="@dimen/bin_180_dip"
+        android:layout_height="@dimen/bin_100_dip"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/bin_20_dip"
+        android:scaleType="fitXY"
+        android:src="@mipmap/icon_add_idcard" />
+
+    <ImageView
+        android:layout_width="@dimen/bin_180_dip"
+        android:layout_height="@dimen/bin_100_dip"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/bin_10_dip"
+        android:scaleType="fitXY"
+        android:src="@mipmap/icon_id_card_sample" />
+
+
+    <Button
+        android:id="@+id/card_dis"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bin_33_dip"
+        android:layout_marginLeft="@dimen/bin_11_dip"
+        android:layout_marginRight="@dimen/bin_11_dip"
+        android:layout_marginTop="@dimen/bin_20_dip"
+        android:background="@drawable/frame_red"
+        android:text="提交审核"
+        android:textColor="@color/white"
+        android:textSize="@dimen/bin_13_dip" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/bin_11_dip"
+        android:layout_marginTop="@dimen/bin_20_dip"
+        android:text="请上传真实身份信息，否则将不予以通过"
+        android:textColor="@color/gray_33"
+        android:textSize="@dimen/bin_13_dip" />
+
+</LinearLayout>

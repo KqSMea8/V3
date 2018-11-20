@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gray_f2"
+    android:orientation="vertical"
+    android:paddingBottom="0.5dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="@dimen/bin_9_dip">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/item_yel_comment_avatar"
+                android:layout_width="@dimen/bin_40_dip"
+                android:layout_height="@dimen/bin_40_dip"
+                android:src="@drawable/head_me" />
+
+            <ImageView
+                android:id="@+id/item_yel_comment_type"
+                android:layout_width="@dimen/bin_15_dip"
+                android:layout_height="@dimen/bin_15_dip"
+                android:layout_alignBottom="@+id/item_yel_comment_avatar"
+                android:layout_alignRight="@+id/item_yel_comment_avatar"
+                android:src="@mipmap/icon_enterprise"
+                />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/bin_5_dip"
+            android:layout_marginRight="@dimen/bin_9_dip"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_yel_comment_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="昵称"
+                android:textColor="@color/black"
+                android:textSize="@dimen/bin_13_dip" />
+
+            <TextView
+                android:id="@+id/item_yel_comment_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/bin_5_dip"
+                android:text="哈哈哈哈哈哈"
+                android:textColor="@color/gray_33"
+                android:textSize="@dimen/bin_12_dip" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/item_yel_comment_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/bin_23_dip"
+            android:text="2017"
+            android:textColor="@color/gray_99"
+            android:textSize="@dimen/bin_10_dip" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

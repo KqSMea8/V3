@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/gray_f2"
+    android:orientation="vertical"
+    android:paddingBottom="0.5dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/bin_33_dip"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/bin_9_dip"
+        android:paddingRight="@dimen/bin_9_dip">
+
+        <ImageView
+            android:id="@+id/item_ent_class_img"
+            android:layout_width="@dimen/bin_22_dip"
+            android:layout_height="@dimen/bin_22_dip"
+            android:src="@mipmap/icon_default" />
+
+        <TextView
+            android:id="@+id/item_ent_class_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/bin_9_dip"
+            android:layout_weight="1"
+            android:text="哈哈哈"
+            android:textColor="@color/gray_33"
+            android:textSize="@dimen/bin_12_dip" />
+
+
+        <ImageView
+            android:id="@+id/item_ent_class_sel"
+            android:layout_width="@dimen/bin_18_dip"
+            android:layout_height="@dimen/bin_18_dip"
+            android:src="@mipmap/icon_radio_normal"
+            android:visibility="gone" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,149 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion '28.0.3'
+    defaultConfig {
+        applicationId "com.huanglong.v3"
+        minSdkVersion 19
+        targetSdkVersion 23
+        versionCode 3
+        versionName "1.3.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        renderscriptTargetApi = 14
+        renderscriptSupportModeEnabled = true
+
+        multiDexEnabled true
+        ndk {
+            abiFilters "armeabi"//, "armeabi-v7a", "arm64-v8a"
+        }
+
+        lintOptions {
+            checkReleaseBuilds false
+            // Or, if you prefer, you can continue to checkforerrorsinrelease builds,
+            // but continue the build even whenerrorsarefound:
+            abortOnError false
+        }
+
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            proguardFiles.add(file('proguard-rules.pro'))
+            signingConfig signingConfigs.debug
+//            ndk {
+//                // 需要将 x86 架构过滤掉
+//                abiFilters "armeabi", "armeabi-v7a", "arm64-v8a"
+//            }
+        }
+        debug {
+//            ndk {
+//                // 需要将 x86 架构过滤掉
+//                abiFilters "armeabi", "armeabi-v7a", "arm64-v8a"
+//            }
+        }
+
+    }
+
+//    sourceSets {
+//        main {
+//            jniLibs.srcDir(['libs'])
+//        }
+//    }
+
+
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+}
+
+repositories {
+    flatDir {
+        dirs 'libs', '../adpoymer/libs'
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation fileTree(include: ['*.jar'], dir: 'src/main/jniLibs')
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:26+'
+    //列表
+    implementation 'com.android.support:recyclerview-v7:28+'
+    implementation 'com.android.support:design:28+'
+    //网络框架
+    implementation 'org.xutils:xutils:3.5.0'
+    //状态栏控制
+    implementation 'com.gyf.barlibrary:barlibrary:2.3.0'
+    //加载图片框架
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+    //banner轮播图
+    implementation 'com.bigkoo:convenientbanner:2.0.5'
+    //Picker 选择器
+    implementation 'com.contrarywind:Android-PickerView:3.2.7'
+    //Gosn解析
+    implementation 'com.google.code.gson:gson:2.2.4'
+    //popu windown
+    implementation 'com.github.zyyoona7:EasyPopup:1.0.2'
+    //下来刷新
+    implementation project(':xrecyclerview')
+    //方法超出
+    implementation 'com.android.support:multidex:1.0.0'
+    //图片选择器
+    implementation 'com.yuyh.imgsel:library:2.0.2'
+    //微信
+    implementation 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:+'
+    //高德地图
+    implementation 'com.amap.api:3dmap:latest.integration'
+    //腾讯云
+    implementation(name: 'volley-1.0.0', ext: 'aar')
+    implementation 'com.github.ctiao:DanmakuFlameMaster:0.9.25'
+    implementation files('src/main/jniLibs/bugly_crash_release.jar')
+    implementation files('src/main/jniLibs/cos-sdk-android.1.4.3.11.jar')
+    implementation files('src/main/jniLibs/imsdk.jar')
+    implementation files('src/main/jniLibs/mobilepb.jar')
+    implementation files('src/main/jniLibs/qalsdk.jar')
+    implementation files('src/main/jniLibs/sha1utils.jar')
+    implementation files('src/main/jniLibs/soload.jar')
+    implementation files('src/main/jniLibs/tls_sdk.jar')
+    implementation files('src/main/jniLibs/wup-1.0.0-SNAPSHOT.jar')
+    implementation files('libs/HwPush_SDK_V2705.jar')
+    implementation files('libs/MiPush_SDK_Client_3_0_3.jar')
+    implementation files('libs/AMap_Location_V3.5.0_20170731.jar')
+    //动态申请权限
+    implementation 'com.github.dfqin:grantor:2.5'
+    implementation 'com.bm.photoview:library:1.4.1'
+    //腾讯小直播
+    implementation files('src/main/jniLibs/cos-android-sdk-5.4.5.jar')
+    implementation(name: 'LiteAVSDK_Professional_5.1.5298', ext: 'aar')
+    implementation 'com.yhy:gvp:1.1.0'
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+    implementation files('src/main/jniLibs/okhttp-3.8.1.jar')
+    implementation files('src/main/jniLibs/okio-1.13.0.jar')
+    implementation 'com.github.castorflex.verticalviewpager:library:19.0.1'
+    //mp3录制
+    implementation 'com.github.CarGuo:RecordWave:v1.1.8'
+    implementation files('libs/AMap_Search_V5.3.1_20170817.jar')
+    //二维码
+    implementation files('libs/zxingjar-1.1.jar')
+    implementation 'com.google.zxing:core:3.2.1'
+    implementation 'cn.bingoogolapple:bga-zxing:1.1.9@aar'
+    implementation 'cn.bingoogolapple:bga-qrcodecore:1.1.9@aar'
+    //腾讯OSS文件上传
+    implementation 'com.aliyun.dpa:oss-android-sdk:+', {
+        exclude module: "okhttp"
+        exclude module: "okio"
+    }
+    implementation 'com.lcodecorex:extextview:1.0.2'
+    implementation files('src/main/jniLibs/open_sdk_r6019_lite.jar')
+    implementation 'com.github.bachors:Android-WordToSpan:3.1'
+    implementation(name: 'sdk-release', ext: 'aar')
+    implementation(name: 'open_ad_sdk', ext: 'aar')
+    implementation(name: 'adpoymer-3.4.65', ext: 'aar')
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.0.+'
+    implementation 'com.android.support:support-v4:28+'
+}

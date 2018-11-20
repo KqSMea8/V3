@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_f2"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/orange_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <EditText
+        android:id="@+id/my_contacts_search"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bin_33_dip"
+        android:layout_marginBottom="@dimen/bin_9_dip"
+        android:layout_marginLeft="@dimen/bin_11_dip"
+        android:layout_marginRight="@dimen/bin_11_dip"
+        android:layout_marginTop="@dimen/bin_9_dip"
+        android:background="@drawable/box_gray_white"
+        android:hint="请输入联系人昵称"
+        android:imeOptions="actionSearch"
+        android:lines="1"
+        android:paddingLeft="@dimen/bin_9_dip"
+        android:paddingRight="@dimen/bin_9_dip"
+        android:singleLine="true"
+        android:textColor="@color/gray_33"
+        android:textColorHint="@color/gray_99"
+        android:textSize="@dimen/bin_12_dip"
+
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/my_contacts_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

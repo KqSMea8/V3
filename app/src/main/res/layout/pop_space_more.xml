@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/box_space_more"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/bin_8_dip"
+        android:paddingLeft="@dimen/bin_11_dip"
+        android:paddingRight="@dimen/bin_11_dip"
+        android:paddingTop="@dimen/bin_8_dip">
+
+        <TextView
+            android:id="@+id/pop_space_zan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/icon_white_zan"
+            android:drawablePadding="@dimen/bin_9_dip"
+            android:gravity="center"
+            android:text="赞"
+            android:textColor="@color/white"
+            android:textSize="@dimen/bin_13_dip" />
+
+        <TextView
+            android:id="@+id/pop_space_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/bin_9_dip"
+            android:drawableLeft="@mipmap/icon_white_comment"
+            android:drawablePadding="@dimen/bin_9_dip"
+            android:gravity="center"
+            android:text="评论"
+            android:textColor="@color/white"
+            android:textSize="@dimen/bin_13_dip" />
+
+    </LinearLayout>
+
+</LinearLayout>

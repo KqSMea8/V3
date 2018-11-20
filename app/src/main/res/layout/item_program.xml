@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gray_F5F5F5"
+    android:orientation="vertical"
+    android:paddingBottom="0.5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="@dimen/bin_12_dip">
+
+        <ImageView
+            android:id="@+id/item_program_avatar"
+            android:layout_width="@dimen/bin_40_dip"
+            android:layout_height="@dimen/bin_40_dip"
+            android:src="@drawable/head_me" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/bin_12_dip"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/item_program_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="哈哈哈"
+                android:textColor="@color/black"
+                android:textSize="@dimen/bin_14_dip" />
+
+            <TextView
+                android:id="@+id/item_program_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="哈哈哈"
+                android:textColor="@color/gray_888888"
+                android:textSize="@dimen/bin_12_dip" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/item_program_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="哈哈哈"
+            android:textColor="@color/black"
+            android:textSize="@dimen/bin_12_dip" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

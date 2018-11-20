@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gray_f2"
+    android:orientation="vertical"
+    android:paddingBottom="0.5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="@dimen/bin_9_dip">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/item_sound_book_img"
+                android:layout_width="@dimen/bin_60_dip"
+                android:layout_height="@dimen/bin_60_dip"
+                android:src="@mipmap/icon_default" />
+
+            <ImageView
+                android:id="@+id/item_sound_book_new"
+                android:layout_width="@dimen/bin_30_dip"
+                android:layout_height="@dimen/bin_30_dip"
+                android:src="@mipmap/icon_new"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/bin_9_dip"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_sound_book_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/gray_33"
+                android:textSize="@dimen/bin_13_dip" />
+
+
+            <TextView
+                android:id="@+id/item_sound_book_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/bin_2_dip"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/gray_99"
+                android:textSize="@dimen/bin_12_dip" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/bin_5_dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/item_sound_book_author"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gray_33"
+                    android:textSize="@dimen/bin_11_dip" />
+
+
+                <TextView
+                    android:id="@+id/item_sound_book_play"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/bin_9_dip"
+                    android:drawableLeft="@mipmap/icon_sound_book_play"
+                    android:drawablePadding="@dimen/bin_5_dip"
+                    android:textColor="@color/gray_99"
+                    android:textSize="@dimen/bin_11_dip" />
+
+                <TextView
+                    android:id="@+id/item_sound_book_drama"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/bin_20_dip"
+                    android:drawableLeft="@mipmap/icon_drama"
+                    android:drawablePadding="@dimen/bin_5_dip"
+                    android:textColor="@color/gray_99"
+                    android:textSize="@dimen/bin_11_dip"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/item_sound_book_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:src="@mipmap/icon_circle_delete"
+            android:visibility="gone" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

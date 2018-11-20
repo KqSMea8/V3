@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/bin_63_dip"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingRight="@dimen/bin_5_dip">
+
+    <ImageView
+        android:id="@+id/filter_image"
+        android:layout_width="@dimen/bin_60_dip"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:scaleType="fitXY" />
+
+    <ImageView
+        android:id="@+id/filter_image_tint"
+        android:layout_width="@dimen/bin_60_dip"
+        android:layout_height="wrap_content"
+        android:background="@drawable/filter_selected"
+        android:visibility="invisible" />
+
+</FrameLayout>

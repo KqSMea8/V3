@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/recording_bg"
+    android:gravity="center_horizontal"
+    android:keepScreenOn="true"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/orange_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <com.huanglong.v3.voice.library.view.WaveSurfaceView
+            android:id="@+id/wavesfv"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:background="@color/transparent"
+            android:visibility="invisible" />
+
+
+        <com.huanglong.v3.view.LrcView
+            android:id="@+id/song_record_lrc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingBottom="@dimen/bin_5_dip"
+            android:paddingTop="@dimen/bin_5_dip"
+            app:lrcAnimationDuration="1000"
+            app:lrcCurrentTextColor="@color/colorAccent"
+            app:lrcDividerHeight="@dimen/bin_12_dip"
+            app:lrcLabel="找不到歌词(@_@)"
+            app:lrcNormalTextColor="#BDBDBD"
+            app:lrcPadding="@dimen/bin_20_dip"
+            app:lrcTextSize="@dimen/bin_16_dip"
+            app:lrcTimeTextColor="#BDBDBD"
+            app:lrcTimelineColor="#80BDBDBD"
+            app:lrcTimelineTextColor="#9FA8DA" />
+
+
+    </RelativeLayout>
+
+
+    <ProgressBar
+        android:id="@+id/song_record_progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bin_5_dip"
+        android:progress="0" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/bin_2_dip"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/bin_9_dip"
+        android:paddingRight="@dimen/bin_9_dip">
+
+        <TextView
+            android:id="@+id/song_record_current_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00"
+            android:textColor="@color/white"
+            android:textSize="@dimen/bin_8_dip" />
+
+        <TextView
+            android:id="@+id/song_record_total_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="00:00"
+            android:textColor="@color/white"
+            android:textSize="@dimen/bin_8_dip" />
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/bin_10_dip"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/listen"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/bin_9_dip"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/bin_10_dip"
+            android:drawableTop="@mipmap/icon_record_listen_n"
+            android:gravity="center_horizontal"
+            android:text="试听"
+            android:textColor="@color/gray_99"
+            android:textSize="@dimen/bin_12_dip"
+            android:visibility="invisible" />
+
+        <com.huanglong.v3.voice.custom.CustomTextView
+            android:id="@+id/recording"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/bin_5_dip"
+            android:drawableTop="@mipmap/icon_recording_button"
+            android:gravity="center"
+            android:scrollX="0dip"
+            android:textColor="@color/gray_99"
+            android:textSize="@dimen/bin_12_dip" />
+
+        <TextView
+            android:id="@+id/reset"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/bin_9_dip"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/bin_10_dip"
+            android:drawableTop="@mipmap/icon_record_reset_n"
+            android:gravity="center_horizontal"
+            android:text="重置"
+            android:textColor="@color/gray_99"
+            android:textSize="@dimen/bin_12_dip" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
